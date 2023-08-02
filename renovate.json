@@ -10,6 +10,6 @@
     "workarounds:all"
   ],
   "schedule": [
-    "before 6am on the first day of the month"
+    "before 3am on Monday"
   ]
 }
