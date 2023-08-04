@@ -14,6 +14,9 @@ importers:
       '@jarsec/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
+      '@jarsec/tsconfig':
+        specifier: workspace:*
+        version: link:packages/tsconfig
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
