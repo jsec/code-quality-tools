@@ -1,6 +1,6 @@
 {
   "name": "@jarsec/eslint-config",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "jsec's eslint configurations",
   "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
   "main": "index.js",
