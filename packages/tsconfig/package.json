@@ -1,7 +1,12 @@
 {
   "name": "@jarsec/tsconfig",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "description": "jsec's tsconfig configurations",
   "license": "MIT",
+  "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
+  "files": [
+      "tsconfig.json"
+  ],
   "publishConfig": {
     "access": "public"
   }

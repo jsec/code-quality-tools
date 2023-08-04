@@ -1,7 +1,7 @@
 {
   "name": "@jarsec/prettier-config",
-  "version": "1.0.0",
-  "description": "Shared prettier configuration",
+  "version": "0.0.1",
+  "description": "jsec's prettier configuration",
   "license": "MIT",
   "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com",
   "files": [
