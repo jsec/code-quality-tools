@@ -1,0 +1,16 @@
+{
+  "name": "@jarsec/prettier-config",
+  "version": "1.0.0",
+  "description": "Shared prettier configuration",
+  "license": "MIT",
+  "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com",
+  "files": [
+    "index.js",
+    ".prettierignore"
+  ],
+  "main": "index.js",
+  "prettier": "./index.js",
+  "publishConfig": {
+      "access": "public"
+  }
+}
