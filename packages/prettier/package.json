@@ -1,6 +1,6 @@
 {
   "name": "@jarsec/prettier-config",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "jsec's prettier configuration",
   "license": "MIT",
   "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com",
@@ -11,6 +11,6 @@
   "main": "index.js",
   "prettier": "./index.js",
   "publishConfig": {
-      "access": "public"
+    "access": "public"
   }
 }
