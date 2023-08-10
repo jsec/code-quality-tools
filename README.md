@@ -1,14 +1,6 @@
-# Turborepo Design System starter with Changesets
+# jsec's Code Quality Tools
 
-This is an official React design system starter powered by Turborepo. Versioning and package publishing is handled by [Changesets](https://github.com/changesets/changesets) and fully automated with GitHub Actions.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-changesets
-```
+This is a set of commonly used code quality enforcement tools used in TypeScript projects, with my personal preferences baked into configurations. The goal of this repo is so that I don't have to keep installing and configuring the same packages over and over and over again.
 
 ## What's inside?
 
@@ -16,58 +8,50 @@ This Turborepo includes the following:
 
 ### Apps and Packages
 
-- `docs`: A placeholder documentation site powered by [Next.js](https://nextjs.org/)
-- `@acme/core`: core React components
-- `@acme/utils`: shared React utilities
-- `@acme/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
-- `eslint-config-acme`: ESLint preset
+- `@jarsec/tsconfig`: A base [tsconfig](https://www.typescriptlang.org/tsconfig) file with my preferred settings.
+- `@jarsec/prettier-config`: A base [Prettier](https://prettier.io/) configuration with my preferred settings.
+- `@jarsec/eslint-config`: A base [ESLint](https://eslint.org/) configuration with my preferred settings. Based off of [xo.js](https://github.com/xojs/xo)
 
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Usage
 
-### Utilities
+### TSConfig 
 
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Useful commands
-
-- `yarn build` - Build all packages and the docs site
-- `yarn dev` - Develop all packages and the docs site
-- `yarn lint` - Lint all packages
-- `yarn changeset` - Generate a changeset
-- `yarn clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
-
-### Changing the npm organization scope
-
-The npm organization scope for this design system starter is `@acme`. To change this, it's a bit manual at the moment, but you'll need to do the following:
-
-- Rename folders in `packages/*` to replace `acme` with your desired scope
-- Search and replace `acme` with your desired scope
-- Re-run `yarn install`
-
-## Versioning and Publishing packages
-
-Package publishing has been configured using [Changesets](https://github.com/changesets/changesets). Please review their [documentation](https://github.com/changesets/changesets#documentation) to familiarize yourself with the workflow.
-
-This example comes with automated npm releases setup in a [GitHub Action](https://github.com/changesets/action). To get this working, you will need to create an `NPM_TOKEN` and `GITHUB_TOKEN` in your repository settings. You should also install the [Changesets bot](https://github.com/apps/changeset-bot) on your GitHub repository as well.
-
-For more information about this automation, refer to the official [changesets documentation](https://github.com/changesets/changesets/blob/main/docs/automating-changesets.md)
-
-### npm
-
-If you want to publish package to the public npm registry and make them publicly available, this is already setup.
-
-To publish packages to a private npm organization scope, **remove** the following from each of the `package.json`'s
-
-```diff
-- "publishConfig": {
--  "access": "public"
-- },
+#### Install
+```
+npm install --save-dev @jarsec/tsconfig
+```
+#### Usage
+`tsconfig.json`
+```json
+{
+  "extends": "./node_modules/@jarsec/tsconfig/tsconfig.json"
+}
 ```
 
-### GitHub Package Registry
+### Prettier
 
-See [Working with the npm registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#publishing-a-package-using-publishconfig-in-the-packagejson-file)
+#### Install
+```
+npm install --save-dev @jarsec/prettier-config
+```
+#### Usage
+`package.json`
+```json
+{
+  "prettier": "@jarsec/prettier-config"
+}
+```
+
+### ESLint
+
+#### Install
+```
+npm install --save-dev @jarsec/eslint-config
+```
+#### Usage
+`.eslintrc.js`
+```js
+{
+  extends: [ '@jarsec/eslint-config' ]
+}
+```
