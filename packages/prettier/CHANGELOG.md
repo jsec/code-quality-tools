@@ -1,5 +1,11 @@
 # @jarsec/prettier-config
 
+## 1.2.0
+
+### Minor Changes
+
+- cafb3ab: Switch from 4 space to 2 space indentation
+
 ## 1.1.0
 
 ### Minor Changes
