@@ -1,5 +1,20 @@
 # @jarsec/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- d5fcb37: Base configuration around standard-with-typescript instead of XO
+
+  XO requires your project to be ESM, StandardJS does not.
+
+### Patch Changes
+
+- 0335f6b: chore(deps): update peer dependency eslint to v8.49.0
+- 013f9dc: fix(deps): update dependency @rushstack/eslint-patch to v1.4.0
+- b310726: fix(deps): update @typescript-eslint dependencies to v6.5.0
+- d63383e: fix(deps): update @typescript-eslint dependencies to v6.7.0
+
 ## 2.0.2
 
 ### Patch Changes
