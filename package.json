@@ -14,7 +14,7 @@
     "@changesets/cli": "2.26.2",
     "@jarsec/eslint-config": "workspace:*",
     "@jarsec/tsconfig": "workspace:*",
-    "eslint": "8.49.0",
+    "eslint": "8.50.0",
     "prettier": "3.0.3",
     "turbo": "latest"
   },
