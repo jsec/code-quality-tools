@@ -1,5 +1,15 @@
 # @jarsec/eslint-config
 
+## 3.1.0
+
+### Minor Changes
+
+- 8482cba: Revert standard-with-typescript configuration
+
+### Patch Changes
+
+- f13defd: fix(deps): update dependencies
+
 ## 3.0.0
 
 ### Major Changes
