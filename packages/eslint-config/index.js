@@ -35,15 +35,17 @@ module.exports = {
     "@typescript-eslint/eslint-plugin",
     "import",
     "simple-import-sort",
+    "prettier",
   ],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "standard-with-typescript",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "prettier",
+    "xo",
+    "xo-typescript",
+    "plugin:prettier/recommended",
   ],
   settings: {
     "import/resolver": {
