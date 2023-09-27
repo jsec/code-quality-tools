@@ -1,5 +1,11 @@
 # @jarsec/prettier-config
 
+## 1.2.1
+
+### Patch Changes
+
+- e3c57df: update line width from 120 to 100
+
 ## 1.2.0
 
 ### Minor Changes
