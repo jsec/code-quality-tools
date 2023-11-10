@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 3.2.1
+
+### Patch Changes
+
+- 66a808e: Add perfectionist config to extends array
+
 ## 3.2.0
 
 ### Minor Changes
