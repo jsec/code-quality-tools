@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['@jarsec/eslint-config'],
+  extends: ["@jarsec/eslint-config"],
 };
