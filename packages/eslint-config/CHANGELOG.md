@@ -1,5 +1,16 @@
 # @jarsec/eslint-config
 
+## 3.2.0
+
+### Minor Changes
+
+- 966515f: Replace simple-import-sort with eslint-plugin-perfectionist
+
+### Patch Changes
+
+- 6c1d736: Add version ranges to typescript and eslint peer dependencies
+- d68718e: fix(deps): update dependencies
+
 ## 3.1.0
 
 ### Minor Changes
