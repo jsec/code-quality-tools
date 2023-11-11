@@ -21,8 +21,8 @@
     "eslint-plugin-prettier": "5.0.1"
   },
   "devDependencies": {
-    "@types/node": "20.8.7",
-    "eslint": "8.51.0",
+    "@types/node": "20.9.0",
+    "eslint": "8.53.0",
     "typescript": "5.2.2"
   },
   "peerDependencies": {
