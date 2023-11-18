@@ -1,5 +1,12 @@
 # @jarsec/eslint-config
 
+## 3.2.2
+
+### Patch Changes
+
+- 61d1f76: fix(deps): update dependencies
+- d572a2e: fix(deps): update dependencies
+
 ## 3.2.1
 
 ### Patch Changes
