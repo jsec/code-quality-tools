@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 3.2.3
+
+### Patch Changes
+
+- ee1b9c4: fix(deps): update dependency eslint-plugin-perfectionist to v2.4.0
+
 ## 3.2.2
 
 ### Patch Changes
