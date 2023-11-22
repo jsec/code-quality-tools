@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com",
   "files": [
-    "index.js",
+    "index.json",
     ".prettierignore"
   ],
   "main": "index.js",
