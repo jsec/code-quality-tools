@@ -1,5 +1,17 @@
 # @jarsec/prettier-config
 
+## 2.0.0
+
+### Major Changes
+
+- 39fa095: - Convert configuration file to JSON
+  - No semicolons allowed
+  - Use tabs instead of spaces for indentation
+
+### Patch Changes
+
+- 39fa095: Remove space indentation setting
+
 ## 1.2.1
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @jarsec/eslint-config
 
+## 4.0.0
+
+### Major Changes
+
+- 39fa095: - Remove xo and xo-typescript configurations
+  - Add standard-with-typescript configuration
+  - Remove eslint-plugin-prettier, let Prettier handle formatting in a separate step
+  - Remove custom TypeScript rules
+
 ## 3.2.3
 
 ### Patch Changes
