@@ -10,7 +10,7 @@ This Turborepo includes the following:
 
 - `@jarsec/tsconfig`: A base [tsconfig](https://www.typescriptlang.org/tsconfig) file with my preferred settings.
 - `@jarsec/prettier-config`: A base [Prettier](https://prettier.io/) configuration with my preferred settings.
-- `@jarsec/eslint-config`: A base [ESLint](https://eslint.org/) configuration with my preferred settings. Based off of [xo.js](https://github.com/xojs/xo)
+- `@jarsec/eslint-config`: A base [ESLint](https://eslint.org/) configuration with my preferred settings. Based off of [standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript)
 
 ## Usage
 
