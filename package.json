@@ -13,10 +13,12 @@
   "devDependencies": {
     "@changesets/cli": "2.26.2",
     "@jarsec/eslint-config": "workspace:*",
+    "@jarsec/prettier-config": "workspace:*",
     "@jarsec/tsconfig": "workspace:*",
     "eslint": "8.53.0",
     "prettier": "3.1.0",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.10.5"
+  "packageManager": "pnpm@8.10.5",
+  "prettier": "@jarsec/prettier-config"
 }
