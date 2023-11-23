@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 4.1.0
+
+### Minor Changes
+
+- a47f70d: Add @stylistic/eslint-plugin
+
 ## 4.0.0
 
 ### Major Changes
