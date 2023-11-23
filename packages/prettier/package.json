@@ -8,8 +8,8 @@
     "index.json",
     ".prettierignore"
   ],
-  "main": "index.js",
-  "prettier": "./index.js",
+  "main": "index.json",
+  "prettier": "./index.json",
   "publishConfig": {
     "access": "public"
   }
