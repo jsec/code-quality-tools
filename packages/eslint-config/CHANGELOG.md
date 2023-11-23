@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 4.2.0
+
+### Minor Changes
+
+- 4c2b1f2: Correct bug where stylistic plugin was not bundled into the library tarball
+
 ## 4.1.0
 
 ### Minor Changes
