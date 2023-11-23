@@ -1,5 +1,11 @@
 # @jarsec/prettier-config
 
+## 2.1.0
+
+### Minor Changes
+
+- 685d031: Fix entry point to prettier configuration
+
 ## 2.0.0
 
 ### Major Changes
