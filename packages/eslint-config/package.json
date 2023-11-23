@@ -23,6 +23,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.4.0",
     "@types/node": "^20.9.1",
     "eslint": "^8.53.0",
     "typescript": "^5.2.2"
