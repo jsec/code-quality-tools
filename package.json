@@ -15,8 +15,8 @@
     "@jarsec/eslint-config": "workspace:*",
     "@jarsec/prettier-config": "workspace:*",
     "@jarsec/tsconfig": "workspace:*",
-    "eslint": "8.55.0",
-    "prettier": "3.1.0",
+    "eslint": "8.56.0",
+    "prettier": "3.1.1",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.11.0",
