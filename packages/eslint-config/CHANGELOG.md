@@ -1,5 +1,15 @@
 # @jarsec/eslint-config
 
+## 4.3.0
+
+### Minor Changes
+
+- 30ad781: Remove style-related rule
+
+### Patch Changes
+
+- 672bab9: fix(deps): update dependencies
+
 ## 4.2.0
 
 ### Minor Changes
