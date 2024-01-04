@@ -9,12 +9,13 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/stylistic',
     'plugin:perfectionist/recommended-natural',
+    'plugin:promise/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['import', 'perfectionist', '@typescript-eslint/eslint-plugin'],
+  plugins: ['import', 'perfectionist', '@typescript-eslint/eslint-plugin', 'promise'],
   settings: {
     'import/resolver': {
       node: true,
