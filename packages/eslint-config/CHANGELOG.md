@@ -1,5 +1,15 @@
 # @jarsec/eslint-config
 
+## 4.4.0
+
+### Minor Changes
+
+- d51b6db: Add JavaScript-specific eslint configuration
+
+### Patch Changes
+
+- 9772eee: Remove unused dependencies
+
 ## 4.3.0
 
 ### Minor Changes
