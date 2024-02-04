@@ -33,10 +33,10 @@ importers:
   packages/eslint-config:
     dependencies:
       '@rushstack/eslint-patch':
-        specifier: ^1.6.1
+        specifier: ^1.7.2
         version: 1.7.2
       '@types/node':
-        specifier: ^20.10.5
+        specifier: ^20.10.8
         version: 20.11.16
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.20.0
@@ -54,7 +54,7 @@ importers:
         specifier: ^2.29.1
         version: 2.29.1(@typescript-eslint/parser@6.20.0)(eslint@8.56.0)
       eslint-plugin-n:
-        specifier: ^16.5.0
+        specifier: ^16.6.2
         version: 16.6.2(eslint@8.56.0)
       eslint-plugin-perfectionist:
         specifier: ^2.5.0
