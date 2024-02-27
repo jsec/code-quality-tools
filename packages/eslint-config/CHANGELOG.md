@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 4.5.0
+
+### Minor Changes
+
+- 126a9e3: Add xo presets
+
 ## 4.4.0
 
 ### Minor Changes
