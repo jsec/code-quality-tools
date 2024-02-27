@@ -2,20 +2,28 @@ require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
   env: {
-    node: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/stylistic',
+    'plugin:unicorn/recommended',
+    'xo',
+    'xo-typescript/space',
     'plugin:perfectionist/recommended-natural',
-    'plugin:promise/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['import', 'perfectionist', '@typescript-eslint/eslint-plugin', 'promise'],
+  plugins: [
+    '@typescript-eslint/eslint-plugin', 
+    'import', 
+    'perfectionist', 
+    'promise', 
+    'unicorn'
+  ],
   settings: {
     'import/resolver': {
       node: true,

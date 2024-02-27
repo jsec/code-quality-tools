@@ -6,8 +6,10 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:promise/recommended',
+    'plugin:unicorn/recommended',
+    'xo',
     'plugin:perfectionist/recommended-natural',
-    'plugin:promise/recommended'
   ],
   plugins: [
     'import',
