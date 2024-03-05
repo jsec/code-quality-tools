@@ -1,4 +1,6 @@
-require('@rushstack/eslint-patch/modern-module-resolution')
+require('@rushstack/eslint-patch/modern-module-resolution');
+
+const styleRules = require('./configs/style');
 
 module.exports = {
   env: {
@@ -6,28 +8,50 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/stylistic',
+    'plugin:n/recommended',
+    'plugin:import/recommended',
     'plugin:unicorn/recommended',
-    'xo',
-    'xo-typescript/space',
-    'plugin:perfectionist/recommended-natural',
+    'plugin:perfectionist/recommended-natural'
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: './tsconfig.json',
-  },
+  overrides: [
+    {
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:import/typescript'
+      ],
+      files: [ '*.ts' ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: './tsconfig.json'
+      },
+      plugins: [
+        '@typescript-eslint/eslint-plugin'
+      ],
+      rules: {
+        ...styleRules,
+        'import/no-unresolved': 'error'
+      },
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': [ '.ts' ]
+        },
+        'import/resolver': {
+          node: true,
+          typescript: {
+            alwaysTryTypes: true
+          }
+        }
+      }
+    }
+  ],
   plugins: [
-    '@typescript-eslint/eslint-plugin', 
-    'import', 
-    'perfectionist', 
-    'promise', 
-    'unicorn'
+    'import',
+    'perfectionist',
+    'unicorn',
+    '@stylistic'
   ],
-  settings: {
-    'import/resolver': {
-      node: true,
-      typescript: true,
-    },
-  },
-}
+  rules: {
+    ...styleRules
+  }
+};
+
