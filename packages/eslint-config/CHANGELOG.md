@@ -1,5 +1,23 @@
 # @jarsec/eslint-config
 
+## 5.0.0
+
+### Major Changes
+
+- c703d78: Refactor eslint configuration
+
+  Version 5 brings the following changes:
+
+  - Removal of xo and xo-typescript
+  - Separation of javascript and typescript rules
+  - Introduction of @stylistic/eslint-plugin and associated rules (to replace dprint/prettier)
+  - Addition of node-specific lint rules
+
+### Patch Changes
+
+- 6c2981c: fix(renovate): Update patch dependencies (patch)
+- cc5eb8e: fix(renovate): Update minor (minor)
+
 ## 4.5.0
 
 ### Minor Changes
