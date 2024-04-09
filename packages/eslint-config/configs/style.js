@@ -40,10 +40,8 @@ module.exports = {
   '@stylistic/keyword-spacing': 'error',
   '@stylistic/linebreak-style': ['error', 'unix'],
   '@stylistic/lines-around-comment': ['error', {
-    afterHashbangComment: true,
-    allowClassStart: true,
+    allowBlockStart: true,
     beforeBlockComment: true,
-    beforeLineComment: true
   }],
   '@stylistic/lines-between-class-members': ['error', 'always'],
   '@stylistic/max-len': ['error', {
@@ -117,7 +115,11 @@ module.exports = {
   '@stylistic/semi-spacing': 'error',
   '@stylistic/semi-style': 'error',
   '@stylistic/space-before-blocks': 'error',
-  '@stylistic/space-before-function-paren': ['error', 'never'],
+  '@stylistic/space-before-function-paren': ['error', {
+    anonymous: 'always',
+    asyncArrow: 'always',
+    named: 'never'
+  }],
   '@stylistic/space-in-parens': ['error', 'never'],
   '@stylistic/switch-colon-spacing': 'error',
   '@stylistic/template-curly-spacing': 'error',

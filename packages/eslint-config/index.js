@@ -51,7 +51,17 @@ module.exports = {
     '@stylistic'
   ],
   rules: {
-    ...styleRules
+    ...styleRules,
+    'multiline-comment-style': [
+      'error',
+      'separate-lines'
+    ],
+    'n/no-missing-import': 'off',
+    'n/no-process-exit': 'off',
+    'unicorn/no-process-exit': 'off',
+    'unicorn/prefer-module': 'off',
+    'unicorn/prefer-top-level-await': 'off',
+    'unicorn/prevent-abbreviations': 'off'
   }
 };
 
