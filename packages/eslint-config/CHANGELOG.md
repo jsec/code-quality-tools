@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 5.1.0
+
+### Minor Changes
+
+- 6dd6e99: Tweaks to unicorn and stylistic rules
+
 ## 5.0.0
 
 ### Major Changes
