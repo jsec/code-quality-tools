@@ -1,5 +1,11 @@
 # @jarsec/tsconfig
 
+## 2.1.0
+
+### Minor Changes
+
+- d295267: Update tsconfig based on total typescript cheatsheet
+
 ## 2.0.0
 
 ### Major Changes
