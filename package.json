@@ -11,7 +11,7 @@
     "release": "turbo build && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.1",
+    "@changesets/cli": "2.27.5",
     "@jarsec/eslint-config": "workspace:*",
     "@jarsec/prettier-config": "workspace:*",
     "@jarsec/tsconfig": "workspace:*",
