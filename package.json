@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "code-quality-tools",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev --no-cache --continue",
