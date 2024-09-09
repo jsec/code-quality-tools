@@ -48,10 +48,16 @@ module.exports = {
     'import',
     'perfectionist',
     'unicorn',
-    '@stylistic'
+    '@stylistic',
+    'import-newlines'
   ],
   rules: {
     ...styleRules,
+    'import-newlines/enforce': ['error', {
+      'items': 2,
+      'max-len': 100,
+      'semi': true
+    }],
     'multiline-comment-style': [
       'error',
       'separate-lines'
