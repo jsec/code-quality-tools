@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 5.2.0
+
+### Minor Changes
+
+- c596d63: Add import-newlines plugin
+
 ## 5.1.0
 
 ### Minor Changes
