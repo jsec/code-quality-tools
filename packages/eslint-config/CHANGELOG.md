@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 6.0.1
+
+### Patch Changes
+
+- 92dcc6b: chore(deps): update devDependency eslint to v9
+
 ## 6.0.0
 
 ### Major Changes
