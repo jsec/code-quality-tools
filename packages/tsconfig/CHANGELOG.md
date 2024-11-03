@@ -1,5 +1,11 @@
 # @jarsec/tsconfig
 
+## 3.0.0
+
+### Major Changes
+
+- 3737a97: Add additional configurations based on runtime and compilation context
+
 ## 2.1.0
 
 ### Minor Changes
