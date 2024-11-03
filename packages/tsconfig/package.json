@@ -4,10 +4,17 @@
   "description": "jsec's tsconfig configurations",
   "license": "MIT",
   "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
-  "files": [
-    "tsconfig.json"
-  ],
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    "./bundler/node": "./node/bundler.json",
+    "./bundler/web": "./web/bundler.json",
+    "./node": "./node/app.json",
+    "./node/lib": "./node/lib.json",
+    "./node/lib-monorepo": "./node/lib-monorepo.json",
+    "./web": "./web/app.json",
+    "./web/lib": "./web/lib.json",
+    "./web/lib-monorepo": "./web/lib-monorepo.json"
   }
 }

@@ -4,37 +4,20 @@ This is a set of commonly used code quality enforcement tools used in TypeScript
 
 ## What's inside?
 
-This Turborepo includes the following:
+This Turborepo includes the following packages:
 
-### Apps and Packages
+#### TSConfig
 
-- `@jarsec/tsconfig`: A base [tsconfig](https://www.typescriptlang.org/tsconfig) file with my preferred settings.
-- `@jarsec/prettier-config`: A base [Prettier](https://prettier.io/) configuration with my preferred settings.
-- `@jarsec/eslint-config`: A base [ESLint](https://eslint.org/) configuration with my preferred settings. Based off of [standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript)
+[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/tsconfig/README.md)
 
-## Usage
 
-### TSConfig 
+#### Prettier
 
-#### Install
-```
-npm install --save-dev @jarsec/tsconfig
-```
-#### Usage
-`tsconfig.json`
-```json
-{
-  "extends": "./node_modules/@jarsec/tsconfig/tsconfig.json"
-}
-```
-
-### Prettier
-
-#### Install
+##### Install
 ```
 npm install --save-dev @jarsec/prettier-config
 ```
-#### Usage
+##### Usage
 `package.json`
 ```json
 {
@@ -42,13 +25,13 @@ npm install --save-dev @jarsec/prettier-config
 }
 ```
 
-### ESLint
+#### ESLint
 
-#### Install
+##### Install
 ```
 npm install --save-dev @jarsec/eslint-config
 ```
-#### Usage
+##### Usage
 `.eslintrc.js`
 ```js
 {
