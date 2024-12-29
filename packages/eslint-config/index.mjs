@@ -29,6 +29,10 @@ export default tseslint.config(
   }),
   {
     rules: {
+      '@typescript-eslint/consistent-type-definitions': [
+        'error',
+        'type',
+      ],
       'multiline-comment-style': ['error', 'separate-lines'],
       'n/no-missing-import': 'off',
       'n/no-process-exit': 'off',
