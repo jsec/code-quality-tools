@@ -25,7 +25,7 @@ export default tseslint.config(
     pluginName: '@stylistic',
     quoteProps: 'consistent-as-needed',
     quotes: 'single',
-    semi: true,
+    semi: false,
   }),
   {
     rules: {
