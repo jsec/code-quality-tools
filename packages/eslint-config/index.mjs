@@ -1,11 +1,11 @@
 // @ts-check
 
-import eslint from '@eslint/js';
-import stylistic from '@stylistic/eslint-plugin';
-import nodePlugin from 'eslint-plugin-n';
-import perfectionist from 'eslint-plugin-perfectionist';
-import unicorn from 'eslint-plugin-unicorn';
-import tseslint from 'typescript-eslint';
+import eslint from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
+import nodePlugin from 'eslint-plugin-n'
+import perfectionist from 'eslint-plugin-perfectionist'
+import unicorn from 'eslint-plugin-unicorn'
+import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -33,11 +33,11 @@ export default tseslint.config(
         'error',
         'type',
       ],
-      'multiline-comment-style': ['error', 'separate-lines'],
+      'multiline-comment-style': ['error', 'starred-block'],
       'n/no-missing-import': 'off',
       'n/no-process-exit': 'off',
       'unicorn/no-process-exit': 'off',
       'unicorn/prevent-abbreviations': 'off',
     },
   },
-);
+)
