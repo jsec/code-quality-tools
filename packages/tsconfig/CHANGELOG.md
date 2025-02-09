@@ -1,5 +1,11 @@
 # @jarsec/tsconfig
 
+## 3.0.1
+
+### Patch Changes
+
+- 5aa623c: Remove erroneous tsconfig file
+
 ## 3.0.0
 
 ### Major Changes
