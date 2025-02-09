@@ -1,5 +1,14 @@
 # @jarsec/eslint-config
 
+## 6.1.0
+
+### Minor Changes
+
+- ea942b3: Turn ASI off
+- bf4b7f2: Re-require semicolons and up indent to 4 spaces
+- 2265b31: Codify preference for types over interfaces
+- 4e31593: multiline-comment-style: use starred-block instead of separate-lines
+
 ## 6.0.1
 
 ### Patch Changes
