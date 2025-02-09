@@ -20,12 +20,12 @@ export default tseslint.config(
     braceStyle: '1tbs',
     commaDangle: 'always-multiline',
     flat: true,
-    indent: 2,
+    indent: 4,
     jsx: true,
     pluginName: '@stylistic',
     quoteProps: 'consistent-as-needed',
     quotes: 'single',
-    semi: false,
+    semi: true,
   }),
   {
     rules: {
