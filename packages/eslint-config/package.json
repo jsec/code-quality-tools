@@ -1,37 +1,33 @@
 {
-  "name": "@jarsec/eslint-config",
-  "version": "6.1.0",
-  "description": "jsec's eslint configurations",
-  "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./index.mjs"
-  },
-  "scripts": {
-    "lint": "eslint --fix ."
-  },
-  "dependencies": {
-    "@eslint/js": "^9.20.0",
-    "@stylistic/eslint-plugin": "^4.0.1",
-    "@types/eslint__js": "^8.42.3",
-    "@types/node": "^20.11.20",
-    "eslint": "^9.20.1",
-    "eslint-plugin-n": "^17.15.1",
-    "eslint-plugin-perfectionist": "^4.9.0",
-    "eslint-plugin-unicorn": "^57.0.0",
-    "typescript": "^5.3.3",
-    "typescript-eslint": "^8.24.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.20",
-    "eslint": "^9.20.1",
-    "typescript": "^5.3.3"
-  },
-  "peerDependencies": {
-    "eslint": "^9.13.0",
-    "typescript": "^5.3.3"
-  }
+    "name": "@jarsec/eslint-config",
+    "version": "6.1.0",
+    "description": "jsec's eslint configurations",
+    "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./index.mjs"
+    },
+    "scripts": {
+        "lint": "eslint --fix ."
+    },
+    "dependencies": {
+        "@eslint/js": "^9.20.0",
+        "@stylistic/eslint-plugin": "^4.0.1",
+        "eslint-plugin-n": "^17.15.1",
+        "eslint-plugin-perfectionist": "^4.9.0",
+        "eslint-plugin-unicorn": "^57.0.0",
+        "typescript-eslint": "^8.24.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.20",
+        "eslint": "^9.20.1",
+        "typescript": "^5.3.3"
+    },
+    "peerDependencies": {
+        "eslint": "^9.13.0",
+        "typescript": "^5.3.3"
+    }
 }
