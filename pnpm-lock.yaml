@@ -36,8 +36,8 @@ importers:
         specifier: ^9.20.0
         version: 9.20.0
       '@stylistic/eslint-plugin':
-        specifier: ^4.0.1
-        version: 4.0.1(eslint@9.20.1)(typescript@5.6.3)
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.20.1)(typescript@5.6.3)
       eslint-plugin-n:
         specifier: ^17.15.1
         version: 17.15.1(eslint@9.20.1)
@@ -210,8 +210,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@stylistic/eslint-plugin@4.0.1':
-    resolution: {integrity: sha512-RwKkRKiDrF4ptiur54ckDhOByQYKYZ1dEmI5K8BJCmuGpauFJXzVL1UQYTA2zq702CqMFdYiJcVFJWfokIgFxw==}
+  '@stylistic/eslint-plugin@4.2.0':
+    resolution: {integrity: sha512-8hXezgz7jexGHdo5WN6JBEIPHCSFyyU4vgbxevu4YLVS5vl+sxqAAGyXSzfNDyR6xMNSH5H1x67nsXcYMOHtZA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=9.0.0'
@@ -1333,7 +1333,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@stylistic/eslint-plugin@4.0.1(eslint@9.20.1)(typescript@5.6.3)':
+  '@stylistic/eslint-plugin@4.2.0(eslint@9.20.1)(typescript@5.6.3)':
     dependencies:
       '@typescript-eslint/utils': 8.24.1(eslint@9.20.1)(typescript@5.6.3)
       eslint: 9.20.1
