@@ -39,4 +39,10 @@ export default tseslint.config(
             'unicorn/prevent-abbreviations': 'off',
         },
     },
+    {
+        extends: [
+            tseslint.configs.disableTypeChecked,
+        ],
+        files: ['**/*.js'],
+    },
 );
