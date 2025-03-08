@@ -1,5 +1,24 @@
 # @jarsec/eslint-config
 
+## 6.2.0
+
+### Minor Changes
+
+- 8e131a4: Disable type-checking rules for JavaScript files
+- 5a293fc: - Update deprecated unicorn config
+  - Remove deprecated `flat` option from @stylistic factory function
+
+### Patch Changes
+
+- ea1d64a: chore(deps): update dependency @stylistic/eslint-plugin to v4
+- 8e60259: chore(deps): update dependency eslint-plugin-n to ^17.15.1
+- df31669: chore(deps): update dependency eslint-plugin-perfectionist to v4
+- c4b8a13: chore(deps): update eslint monorepo
+- 185c428: chore(deps): update dependency typescript-eslint to ^8.24.1
+- 2693c75: chore(deps): update dependency typescript-eslint to ^8.26.0
+- 54f5069: chore(deps): update eslint monorepo to ^9.21.0
+- 4938aaf: chore(deps): update dependency @stylistic/eslint-plugin to ^4.2.0
+
 ## 6.1.0
 
 ### Minor Changes
