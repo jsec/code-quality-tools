@@ -27,14 +27,4 @@ npm install --save-dev @jarsec/prettier-config
 
 #### ESLint
 
-##### Install
-```
-npm install --save-dev @jarsec/eslint-config
-```
-##### Usage
-`.eslintrc.js`
-```js
-{
-  extends: [ '@jarsec/eslint-config' ]
-}
-```
+[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/eslint-config/README.md)
