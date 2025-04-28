@@ -1,5 +1,14 @@
 # @jarsec/eslint-config
 
+## 6.2.1
+
+### Patch Changes
+
+- 96bca17: chore(deps): update dependency eslint-plugin-perfectionist to ^4.12.3
+- 7d61739: chore(deps): update dependency eslint-plugin-n to ^17.17.0
+- 0d449ec: chore(deps): update dependency typescript-eslint to ^8.31.1
+- df500da: chore(deps): update eslint monorepo to ^9.25.1
+
 ## 6.2.0
 
 ### Minor Changes
