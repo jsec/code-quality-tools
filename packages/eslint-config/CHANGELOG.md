@@ -1,5 +1,13 @@
 # @jarsec/eslint-config
 
+## 6.2.2
+
+### Patch Changes
+
+- f3c316f: Disable n/no-unpublished-import for tests and config files
+- 766fcf5: Disable unicorn/no-null
+- d5cdeef: chore(deps): update dependency typescript to ^5.8.3
+
 ## 6.2.1
 
 ### Patch Changes
