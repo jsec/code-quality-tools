@@ -35,6 +35,7 @@ export default tseslint.config(
             'multiline-comment-style': ['error', 'starred-block'],
             'n/no-missing-import': 'off',
             'n/no-process-exit': 'off',
+            'unicorn/no-null': 'off', // TODO: revisit this
             'unicorn/no-process-exit': 'off',
             'unicorn/prevent-abbreviations': 'off',
         },
