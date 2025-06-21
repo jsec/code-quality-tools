@@ -45,4 +45,14 @@ export default tseslint.config(
         ],
         files: ['**/*.js'],
     },
+    {
+        files: [
+            'eslint.config.js',
+            'drizzle.config.ts',
+            '**/*.test.ts',
+        ],
+        rules: {
+            'n/no-unpublished-import': 'off',
+        },
+    },
 );
