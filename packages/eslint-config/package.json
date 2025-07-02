@@ -22,7 +22,7 @@
         "typescript-eslint": "^8.31.1"
     },
     "devDependencies": {
-        "@types/node": "^20.17.57",
+        "@types/node": "^22.16.0",
         "eslint": "^9.25.1",
         "typescript": "^5.8.3"
     },
