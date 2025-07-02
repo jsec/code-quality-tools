@@ -1,5 +1,14 @@
 # @jarsec/eslint-config
 
+## 6.2.3
+
+### Patch Changes
+
+- 2f45440: Update @types/node to v22
+- 8e49865: chore(deps): update dependency eslint-plugin-perfectionist to ^4.15.0
+- a67977d: chore(deps): update dependency @stylistic/eslint-plugin to ^4.4.1
+- c462cc1: chore(deps): update dependency eslint-plugin-unicorn to v59
+
 ## 6.2.2
 
 ### Patch Changes
