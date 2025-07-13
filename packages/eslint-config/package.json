@@ -1,6 +1,8 @@
 {
     "name": "@jarsec/eslint-config",
     "version": "6.2.3",
+    "version": "6.2.2",
+    "type": "module",
     "description": "jsec's eslint configurations",
     "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
     "license": "MIT",
@@ -8,7 +10,8 @@
         "access": "public"
     },
     "exports": {
-        ".": "./index.mjs"
+        ".": "./configs/base.js",
+        "react": "./configs/react.js"
     },
     "scripts": {
         "lint": "eslint --fix ."
@@ -18,12 +21,15 @@
         "@stylistic/eslint-plugin": "^4.4.1",
         "eslint-plugin-n": "^17.17.0",
         "eslint-plugin-perfectionist": "^4.15.0",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^5.2.0",
         "eslint-plugin-unicorn": "^59.0.1",
         "typescript-eslint": "^8.36.0"
     },
     "devDependencies": {
         "@types/node": "^22.16.0",
         "eslint": "^9.25.1",
+        "globals": "^16.3.0",
         "typescript": "^5.8.3"
     },
     "peerDependencies": {
