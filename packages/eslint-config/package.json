@@ -1,7 +1,6 @@
 {
     "name": "@jarsec/eslint-config",
     "version": "6.2.3",
-    "type": "module",
     "description": "jsec's eslint configurations",
     "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
     "license": "MIT",
@@ -9,8 +8,8 @@
         "access": "public"
     },
     "exports": {
-        ".": "./configs/base.js",
-        "react": "./configs/react.js"
+        ".": "./configs/base.mjs",
+        "./react": "./configs/react.mjs"
     },
     "scripts": {
         "lint": "eslint --fix ."

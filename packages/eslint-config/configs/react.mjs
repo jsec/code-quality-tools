@@ -7,7 +7,7 @@ import hooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-import baseConfig from './base.js';
+import baseConfig from './base.mjs';
 
 export default tseslint.config(
     ...baseConfig,
