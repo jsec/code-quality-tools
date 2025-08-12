@@ -1,5 +1,18 @@
 # @jarsec/eslint-config
 
+## 6.3.0
+
+### Minor Changes
+
+- 023a087: Disable unpublished import errors for tsdown config files
+- 8b8f376: Add react eslint config
+
+### Patch Changes
+
+- 9f170ce: chore(deps): update dependency typescript-eslint to ^8.36.0
+- cc1d078: chore(deps): update dependency eslint-plugin-n to ^17.21.3
+- 6e684cf: chore(deps): update dependency eslint-plugin-n to ^17.21.0
+
 ## 6.2.3
 
 ### Patch Changes
@@ -65,7 +78,6 @@
 ### Major Changes
 
 - bc38fb2: Update to ESLint v9
-
   - Bump ESLint dependencies to support the v9 migration.
   - Update config file to flat config format.
   - Drop eslint-plugin-import until they can get their lives together.
@@ -90,7 +102,6 @@
 - c703d78: Refactor eslint configuration
 
   Version 5 brings the following changes:
-
   - Removal of xo and xo-typescript
   - Separation of javascript and typescript rules
   - Introduction of @stylistic/eslint-plugin and associated rules (to replace dprint/prettier)
