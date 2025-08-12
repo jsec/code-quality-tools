@@ -50,6 +50,7 @@ export default tseslint.config(
         files: [
             'eslint.config.js',
             'drizzle.config.ts',
+            'tsdown.config.ts',
             '**/*.test.ts',
         ],
         rules: {
