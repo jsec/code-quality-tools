@@ -1,0 +1,11 @@
+{
+  "name": "@jarsec/biome-config",
+  "version": "0.0.1",
+  "description": "jsec's biome configurations",
+  "license": "MIT",
+  "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {}
+}
