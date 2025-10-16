@@ -4,12 +4,13 @@ import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 import baseConfig from './base.mjs';
 
-export default tseslint.config(
+export default defineConfig([
     ...baseConfig,
     js.configs.recommended,
     eslintConfigPrettier,
@@ -35,4 +36,4 @@ export default tseslint.config(
         },
         settings: { react: { version: 'detect' } },
     },
-);
+]);

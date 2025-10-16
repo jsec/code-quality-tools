@@ -5,9 +5,10 @@ import stylistic from '@stylistic/eslint-plugin';
 import nodePlugin from 'eslint-plugin-n';
 import perfectionist from 'eslint-plugin-perfectionist';
 import unicorn from 'eslint-plugin-unicorn';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig([
     eslint.configs.recommended,
     ...tseslint.configs.recommended,
     ...tseslint.configs.stylistic,
@@ -57,4 +58,4 @@ export default tseslint.config(
             'n/no-unpublished-import': 'off',
         },
     },
-);
+]);
