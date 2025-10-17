@@ -21,6 +21,6 @@
     "prettier": "3.6.2",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.18.3",
   "prettier": "@jarsec/prettier-config"
 }
