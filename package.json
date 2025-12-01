@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
-    "@changesets/cli": "2.29.7",
+    "@changesets/cli": "2.29.8",
     "@jarsec/eslint-config": "workspace:*",
     "@jarsec/prettier-config": "workspace:*",
     "@jarsec/tsconfig": "workspace:*",
