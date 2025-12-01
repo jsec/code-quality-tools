@@ -17,7 +17,7 @@
     "@jarsec/eslint-config": "workspace:*",
     "@jarsec/prettier-config": "workspace:*",
     "@jarsec/tsconfig": "workspace:*",
-    "eslint": "9.34.0",
+    "eslint": "9.39.1",
     "prettier": "3.6.2",
     "turbo": "latest"
   },
