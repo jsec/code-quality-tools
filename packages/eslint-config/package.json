@@ -27,7 +27,7 @@
         "typescript-eslint": "^8.42.0"
     },
     "devDependencies": {
-        "@types/node": "^22.18.4",
+        "@types/node": "^22.19.1",
         "typescript": "^5.9.3"
     },
     "peerDependencies": {
