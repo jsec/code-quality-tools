@@ -1,5 +1,23 @@
 # @jarsec/eslint-config
 
+## 6.4.0
+
+### Minor Changes
+
+- 9971bf1: Migrate `tseslint.config()` to eslint's built-in `defineConfig`
+
+### Patch Changes
+
+- 03d3594: chore(deps): update dependency eslint-plugin-n to ^17.23.1
+- 6bd3a5e: chore(deps): update dependency typescript to ^5.9.2
+- f6ec699: chore(deps): update eslint monorepo to ^9.39.1
+- 88b4269: chore(deps): update dependency typescript to ^5.9.3
+- 847ac77: chore(deps): update dependency globals to ^16.5.0
+- c0e0cbd: chore(deps): update dependency eslint-plugin-unicorn to v62
+- f6e5d54: chore(deps): update eslint monorepo to ^9.34.0
+- ac491c7: chore(deps): update dependency typescript-eslint to ^8.42.0
+- 137a191: chore(deps): update dependency typescript-eslint to ^8.49.0
+
 ## 6.3.0
 
 ### Minor Changes
