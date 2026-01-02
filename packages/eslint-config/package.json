@@ -4,8 +4,14 @@
     "description": "jsec's eslint configurations",
     "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
     "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jsec/code-quality-tools.git",
+      "directory": "packages/eslint-config"
+    },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "provenance": true
     },
     "exports": {
         ".": "./configs/base.mjs",
