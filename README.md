@@ -10,21 +10,11 @@ This Turborepo includes the following packages:
 
 [README](https://github.com/jsec/code-quality-tools/blob/develop/packages/tsconfig/README.md)
 
-
 #### Prettier
-
-##### Install
-```
-npm install --save-dev @jarsec/prettier-config
-```
-##### Usage
-`package.json`
-```json
-{
-  "prettier": "@jarsec/prettier-config"
-}
-```
+[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/prettier/README.md)
 
 #### ESLint
-
 [README](https://github.com/jsec/code-quality-tools/blob/develop/packages/eslint-config/README.md)
+
+#### Biome
+[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/biome-config/README.md)
