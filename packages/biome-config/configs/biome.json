@@ -1,7 +1,22 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
-	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
-	"files": { "ignoreUnknown": false },
+	"$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+	"root": false,
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": false
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	},
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab",
@@ -55,7 +70,6 @@
 			},
 			"nursery": {
 				"noEmptySource": "error",
-				"noUndeclaredEnvVars": "warn",
 				"noUnusedExpressions": "off",
 				"noUselessUndefined": "error"
 			},
@@ -72,9 +86,9 @@
 				"useCollapsedIf": "error",
 				"useConsistentArrayType": "error",
 				"useConsistentTypeDefinitions": {
-                    "level": "error",
-                    "options": { "style": "type" }
-                }
+					"level": "error",
+					"options": { "style": "type" }
+				},
 				"useExplicitLengthCheck": "error",
 				"useFilenamingConvention": {
 					"level": "error",
@@ -130,16 +144,16 @@
 				"useNamespaceKeyword": "error",
 				"useNumberToFixedDigitsArgument": "error"
 			}
-		},
-		"includes": ["**", "!dist/**", "**", "!dist/**"]
+		}
 	},
-	"javascript": { "formatter": { "quoteStyle": "double" }, "globals": [] },
 	"overrides": [
 		{
 			"includes": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
 			"linter": {
 				"rules": {
-					"complexity": { "noArguments": "error" },
+					"complexity": {
+						"noArguments": "error"
+					},
 					"correctness": {
 						"noConstAssign": "off",
 						"noGlobalObjectCalls": "off",
@@ -150,168 +164,64 @@
 						"noUnreachable": "off",
 						"noUnreachableSuper": "off"
 					},
-					"style": { "useConst": "error" },
-					"suspicious": {
-						"noClassAssign": "off",
-						"noDuplicateClassMembers": "off",
-						"noDuplicateObjectKeys": "off",
-						"noDuplicateParameters": "off",
-						"noFunctionAssign": "off",
-						"noImportAssign": "off",
-						"noRedeclare": "off",
-						"noUnsafeNegation": "off",
-						"noVar": "error",
-						"noWith": "off",
-						"useGetterReturn": "off"
-					}
-				}
-			}
-		},
-		{
-			"includes": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
-			"linter": {
-				"rules": {
-					"complexity": { "noArguments": "error" },
-					"correctness": {
-						"noConstAssign": "off",
-						"noGlobalObjectCalls": "off",
-						"noInvalidBuiltinInstantiation": "off",
-						"noInvalidConstructorSuper": "off",
-						"noSetterReturn": "off",
-						"noUndeclaredVariables": "off",
-						"noUnreachable": "off",
-						"noUnreachableSuper": "off"
-					},
-					"style": { "useConst": "error" },
-					"suspicious": {
-						"noClassAssign": "off",
-						"noDuplicateClassMembers": "off",
-						"noDuplicateObjectKeys": "off",
-						"noDuplicateParameters": "off",
-						"noFunctionAssign": "off",
-						"noImportAssign": "off",
-						"noRedeclare": "off",
-						"noUnsafeNegation": "off",
-						"noVar": "error",
-						"noWith": "off",
-						"useGetterReturn": "off"
-					}
-				}
-			}
-		},
-		{
-			"includes": ["**/*.js"],
-			"javascript": { "globals": [] },
-			"linter": {
-				"rules": {
-					"complexity": { "useLiteralKeys": "off", "useOptionalChain": "off" },
-					"style": { "useReadonlyClassProperties": "off" },
-					"suspicious": { "useAwait": "off" }
-				}
-			}
-		},
-		{ "includes": ["**/*.js"] },
-		{
-			"includes": ["eslint.config.js", "drizzle.config.ts", "**/*.test.ts"],
-			"linter": { "rules": {} }
-		},
-		{
-			"includes": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
-			"linter": {
-				"rules": {
-					"complexity": { "noArguments": "error" },
-					"correctness": {
-						"noConstAssign": "off",
-						"noGlobalObjectCalls": "off",
-						"noInvalidBuiltinInstantiation": "off",
-						"noInvalidConstructorSuper": "off",
-						"noSetterReturn": "off",
-						"noUndeclaredVariables": "off",
-						"noUnreachable": "off",
-						"noUnreachableSuper": "off"
-					},
-					"nursery": { "useSpread": "error" },
-					"style": { "useConst": "error" },
-					"suspicious": {
-						"noClassAssign": "off",
-						"noDuplicateClassMembers": "off",
-						"noDuplicateObjectKeys": "off",
-						"noDuplicateParameters": "off",
-						"noFunctionAssign": "off",
-						"noImportAssign": "off",
-						"noRedeclare": "off",
-						"noUnsafeNegation": "off",
-						"noVar": "error",
-						"noWith": "off",
-						"useGetterReturn": "off"
-					}
-				}
-			}
-		},
-		{
-			"includes": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
-			"linter": {
-				"rules": {
-					"complexity": { "noArguments": "error" },
-					"correctness": {
-						"noConstAssign": "off",
-						"noGlobalObjectCalls": "off",
-						"noInvalidBuiltinInstantiation": "off",
-						"noInvalidConstructorSuper": "off",
-						"noSetterReturn": "off",
-						"noUndeclaredVariables": "off",
-						"noUnreachable": "off",
-						"noUnreachableSuper": "off"
-					},
-					"nursery": { "useSpread": "error" },
-					"style": { "useConst": "error" },
-					"suspicious": {
-						"noClassAssign": "off",
-						"noDuplicateClassMembers": "off",
-						"noDuplicateObjectKeys": "off",
-						"noDuplicateParameters": "off",
-						"noFunctionAssign": "off",
-						"noImportAssign": "off",
-						"noRedeclare": "off",
-						"noUnsafeNegation": "off",
-						"noVar": "error",
-						"noWith": "off",
-						"useGetterReturn": "off"
-					}
-				}
-			}
-		},
-		{
-			"includes": ["**/*.js"],
-			"javascript": { "globals": [] },
-			"linter": {
-				"rules": {
-					"complexity": { "useLiteralKeys": "off", "useOptionalChain": "off" },
 					"nursery": {
-						"noDeprecatedImports": "off",
-						"noFloatingPromises": "off",
-						"noForIn": "off",
-						"noMisusedPromises": "off",
-						"noUnnecessaryConditions": "off",
-						"useArraySortCompare": "off",
-						"useExhaustiveSwitchCases": "off",
-						"useFind": "off",
-						"useRegexpExec": "off"
+						"useSpread": "error"
+					},
+					"style": {
+						"useConst": "error"
+					},
+					"suspicious": {
+						"noClassAssign": "off",
+						"noDuplicateClassMembers": "off",
+						"noDuplicateObjectKeys": "off",
+						"noDuplicateParameters": "off",
+						"noFunctionAssign": "off",
+						"noImportAssign": "off",
+						"noRedeclare": "off",
+						"noUnsafeNegation": "off",
+						"noVar": "error",
+						"noWith": "off",
+						"useGetterReturn": "off"
+					}
+				}
+			}
+		},
+		{
+			"includes": ["**/*.js"],
+			"linter": {
+				"rules": {
+					"complexity": {
+						"useLiteralKeys": "off",
+						"useOptionalChain": "error"
 					},
 					"style": {
 						"useExportType": "off",
 						"useNamingConvention": {
 							"level": "off",
-							"options": { "strictCase": false, "requireAscii": false }
+							"options": {
+								"strictCase": false,
+								"requireAscii": true
+							}
 						},
 						"useReadonlyClassProperties": "off",
 						"useThrowOnlyError": "off"
 					},
-					"suspicious": { "useAwait": "off" }
+					"suspicious": {
+						"useAwait": "error"
+					},
+					"nursery": {
+						"noDeprecatedImports": "off",
+						"noFloatingPromises": "error",
+						"noForIn": "warn",
+						"noMisusedPromises": "error",
+						"noUnnecessaryConditions": "error",
+						"useArraySortCompare": "warn",
+						"useExhaustiveSwitchCases": "warn",
+						"useFind": "error"
+					}
 				}
 			}
 		},
-		{ "includes": ["**/*.js"] },
 		{
 			"includes": ["eslint.config.js", "drizzle.config.ts", "**/*.test.ts"],
 			"linter": { "rules": {} }
@@ -333,9 +243,5 @@
 		"formatter": {
 			"trailingCommas": "none"
 		}
-	},
-	"assist": {
-		"enabled": true,
-		"actions": { "source": { "organizeImports": "on" } }
 	}
 }
