@@ -12,7 +12,6 @@
     "release": "turbo build && changeset publish"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.8",
     "@changesets/cli": "2.29.8",
     "@jarsec/eslint-config": "workspace:*",
     "@jarsec/prettier-config": "workspace:*",

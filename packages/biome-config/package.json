@@ -1,0 +1,23 @@
+{
+    "name": "@jarsec/biome-config",
+    "version": "0.0.1",
+    "description": "jsec's Biome configurations",
+    "homepage": "https://github.com/jsec/code-quality-tools#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jsec/code-quality-tools.git",
+        "directory": "packages/biome-config"
+    },
+    "license": "MIT",
+    "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
+    "exports": {
+        ".": "./configs/biome.json"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.3.8"
+    },
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    }
+}
