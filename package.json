@@ -1,25 +1,31 @@
 {
-  "private": true,
-  "name": "code-quality-tools",
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev --no-cache --continue",
-    "lint": "turbo lint",
-    "clean": "turbo clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "turbo build && changeset publish"
-  },
-  "devDependencies": {
-    "@changesets/cli": "2.29.8",
-    "@jarsec/eslint-config": "workspace:*",
-    "@jarsec/prettier-config": "workspace:*",
-    "@jarsec/tsconfig": "workspace:*",
-    "eslint": "9.39.2",
-    "prettier": "3.7.4",
-    "turbo": "latest"
-  },
-  "packageManager": "pnpm@10.28.0",
-  "prettier": "@jarsec/prettier-config"
+    "private": true,
+    "name": "code-quality-tools",
+    "scripts": {
+        "build": "turbo build",
+        "dev": "turbo dev --no-cache --continue",
+        "lint": "turbo lint",
+        "clean": "turbo clean && rm -rf node_modules",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "changeset": "changeset",
+        "version-packages": "changeset version",
+        "release": "turbo build && changeset publish"
+    },
+    "devDependencies": {
+        "@changesets/cli": "2.29.8",
+        "@jarsec/eslint-config": "workspace:*",
+        "@jarsec/prettier-config": "workspace:*",
+        "@jarsec/tsconfig": "workspace:*",
+        "commitizen": "4.3.1",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "9.39.2",
+        "prettier": "3.7.4",
+        "turbo": "latest"
+    },
+    "packageManager": "pnpm@10.28.0",
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
 }
