@@ -1,13 +1,13 @@
 {
     "name": "@jarsec/eslint-config",
-    "version": "6.4.0",
+    "version": "6.4.1",
     "description": "jsec's eslint configurations",
     "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
     "license": "MIT",
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/jsec/code-quality-tools.git",
-      "directory": "packages/eslint-config"
+        "type": "git",
+        "url": "git+https://github.com/jsec/code-quality-tools.git",
+        "directory": "packages/eslint-config"
     },
     "publishConfig": {
         "access": "public",

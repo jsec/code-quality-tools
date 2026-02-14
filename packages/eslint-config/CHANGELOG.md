@@ -1,5 +1,14 @@
 # @jarsec/eslint-config
 
+## 6.4.1
+
+### Patch Changes
+
+- 5415df4: chore(deps): update dependency typescript-eslint to ^8.53.0
+- cf67259: chore(deps): update dependency globals to v17
+- 6ee0d93: chore(deps): update dependency eslint-plugin-n to ^17.23.2
+- 2975e2e: chore(deps): update eslint monorepo to ^9.39.2
+
 ## 6.4.0
 
 ### Minor Changes
