@@ -13,8 +13,12 @@
     "exports": {
         ".": "./configs/base.json"
     },
-        "publishConfig": {
+    "publishConfig": {
         "access": "public",
         "provenance": true
+    },
+    "dependencies": {
+        "oxlint": "^1.47.0",
+        "oxlint-tsgolint": "^0.12.2"
     }
 }
