@@ -18,7 +18,7 @@
         "@jarsec/tsconfig": "workspace:*",
         "commitizen": "4.3.1",
         "cz-conventional-changelog": "3.3.0",
-        "eslint": "9.39.2",
+        "eslint": "^10.0.1",
         "prettier": "3.7.4",
         "turbo": "latest"
     },
