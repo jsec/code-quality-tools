@@ -1,6 +1,6 @@
 {
     "name": "@jarsec/oxlint-config",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "jsec's oxlint configuration",
     "homepage": "https://github.com/jsec/code-quality-tools#readme",
     "repository": {
