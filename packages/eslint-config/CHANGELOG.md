@@ -1,5 +1,21 @@
 # @jarsec/eslint-config
 
+## 7.0.0
+
+### Major Changes
+
+- 0d9452d: Update to Eslint 10
+  Replace React plugins with @eslint-react/eslint-plugin
+- 20b51a6: fix(deps): update dependency @stylistic/eslint-plugin to v5
+- c82b578: fix(deps): update dependency eslint-plugin-perfectionist to v5
+
+### Patch Changes
+
+- 0541a3c: fix(deps): update eslint
+- 9e7f69f: fix(deps): update dependency globals to ^17.3.0
+- 7c40703: fix(deps): update dependency eslint-plugin-n to ^17.24.0
+- c9d5835: chore(deps): update dependency typescript to ^5.9.3
+
 ## 6.4.1
 
 ### Patch Changes
