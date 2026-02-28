@@ -19,6 +19,6 @@
     },
     "dependencies": {
         "oxlint": "^1.47.0",
-        "oxlint-tsgolint": "^0.14.0"
+        "oxlint-tsgolint": "^0.14.2"
     }
 }
