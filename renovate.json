@@ -1,6 +1,73 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>jsec/renovate-config:default.json"
+	  "config:recommended",
+	  ":dependencyDashboard",
+	  "replacements:all",
+	  "workarounds:all",
+	  "helpers:disableTypesNodeMajor",
+	  "helpers:pinGitHubActionDigests"
+  ],
+  "schedule": ["every 2 weeks on Sunday"],
+  "rebaseWhen": "conflicted",
+  "rangeStrategy": "replace",
+  "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["every 2 weeks on Sunday"]
+  },
+  "major": {
+	  "minimumReleaseAge": "30 days"
+  },
+  "minor": {
+	  "minimumReleaseAge": "7 days"
+  },
+  "packageRules": [
+    {
+      "description": "ESLint ecosystem",
+      "groupName": "eslint ecosystem",
+      "matchPackageNames": [
+        "eslint",
+        "@eslint/js",
+        "@eslint-react/eslint-plugin",
+        "eslint-plugin-n",
+        "eslint-plugin-perfectionist",
+        "eslint-plugin-unicorn",
+        "@stylistic/eslint-plugin",
+        "typescript-eslint"
+      ]
+    },
+    {
+      "description": "TypeScript",
+      "groupName": "typescript",
+      "matchPackageNames": ["typescript", "@types/node"]
+    },
+    {
+      "description": "Oxlint",
+      "groupName": "oxlint",
+      "matchPackageNames": ["oxlint", "oxlint-tsgolint"]
+    },
+    {
+      "description": "Biome",
+      "groupName": "biome",
+      "matchPackageNames": ["@biomejs/biome"]
+    },
+    {
+      "description": "Build tooling",
+      "groupName": "build tooling",
+      "matchPackageNames": ["turbo"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "description": "Release tooling",
+      "groupName": "release tooling",
+      "matchPackageNames": ["@changesets/cli"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "description": "Commit tooling",
+      "groupName": "commit tooling",
+      "matchPackageNames": ["commitizen", "cz-conventional-changelog"]
+    }
   ]
 }
