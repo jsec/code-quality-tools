@@ -1,5 +1,12 @@
 # @jarsec/oxlint-config
 
+## 0.1.2
+
+### Patch Changes
+
+- 440b396: fix(deps): update dependency oxlint-tsgolint to ^0.14.2
+- 6abc99b: fix(deps): update dependency oxlint to ^1.49.0
+
 ## 0.1.1
 
 ### Patch Changes
