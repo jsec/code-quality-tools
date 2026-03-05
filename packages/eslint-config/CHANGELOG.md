@@ -1,5 +1,13 @@
 # @jarsec/eslint-config
 
+## 7.0.1
+
+### Patch Changes
+
+- a831c22: fix(deps): update dependency @stylistic/eslint-plugin to ^5.9.0
+- 6b7c3ee: fix(deps): update eslint
+- 55c0da7: fix(deps): update dependency eslint-plugin-perfectionist to ^5.6.0
+
 ## 7.0.0
 
 ### Major Changes
