@@ -11,13 +11,15 @@
     "license": "MIT",
     "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
     "exports": {
-        ".": "./configs/base.json"
+        "lint": "./configs/lint/base.json",
+        "fmt": "./configs/fmt/base.json"
     },
     "publishConfig": {
         "access": "public",
         "provenance": true
     },
     "dependencies": {
+        "oxfmt": "^0.36.0",
         "oxlint": "^1.49.0",
         "oxlint-tsgolint": "^0.14.2"
     }
