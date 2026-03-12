@@ -1,29 +1,33 @@
-import react from '@eslint-react/eslint-plugin';
-import eslint from '@eslint/js';
-import { defineConfig } from 'eslint/config';
-import tseslint from 'typescript-eslint';
+// @ts-check
 
-import baseConfig from './base.js';
+import eslintReact from '@eslint-react/eslint-plugin';
+import tanstackQuery from '@tanstack/eslint-plugin-query';
+import tanstackRouter from '@tanstack/eslint-plugin-router';
+import globals from 'globals';
 
-export default defineConfig(
+import base from './base.js';
+
+export default [
+    ...base,
+    eslintReact.configs['recommended-type-checked'],
+    ...tanstackQuery.configs['flat/recommended'],
+    ...tanstackRouter.configs['flat/recommended'],
     {
-        extends: [
-            eslint.configs.recommended,
-            tseslint.configs.recommended,
-            ...baseConfig,
-            react.configs['recommended-typescript'],
-        ],
-        files: ['**/*.ts', '**/*.tsx'],
         languageOptions: {
-            parser: tseslint.parser,
-            parserOptions: {
-                projectService: true,
-                // eslint-disable-next-line n/no-unsupported-features/node-builtins
-                tsconfigRootDir: import.meta.dirname,
-            },
-        },
-        rules: {
-            '@eslint-react/no-missing-key': 'warn',
+            globals: globals.browser,
         },
     },
-);
+    {
+        rules: {
+            '@eslint-react/no-array-index-key': 'error',
+            '@eslint-react/no-leaked-conditional-rendering': 'error',
+            '@eslint-react/no-missing-key': 'error',
+            '@eslint-react/prefer-destructuring-assignment': 'error',
+            '@eslint-react/prefer-read-only-props': 'error',
+            'n/no-missing-import': 'off',
+            'n/no-unpublished-import': 'off',
+            'n/no-unsupported-features/node-builtins': 'off',
+            'unicorn/no-anonymous-default-export': 'error',
+        },
+    },
+];

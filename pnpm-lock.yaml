@@ -53,6 +53,12 @@ importers:
       '@stylistic/eslint-plugin':
         specifier: ^5.9.0
         version: 5.9.0(eslint@10.0.2(jiti@2.6.1))
+      '@tanstack/eslint-plugin-query':
+        specifier: ^5.91.4
+        version: 5.91.4(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
+      '@tanstack/eslint-plugin-router':
+        specifier: ^1.161.4
+        version: 1.161.4(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
       eslint:
         specifier: ^10.0.2
         version: 10.0.2(jiti@2.6.1)
@@ -653,6 +659,20 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^9.0.0 || ^10.0.0
+
+  '@tanstack/eslint-plugin-query@5.91.4':
+    resolution: {integrity: sha512-8a+GAeR7oxJ5laNyYBQ6miPK09Hi18o5Oie/jx8zioXODv/AUFLZQecKabPdpQSLmuDXEBPKFh+W5DKbWlahjQ==}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@tanstack/eslint-plugin-router@1.161.4':
+    resolution: {integrity: sha512-Cw6naM1QII0DEpjQvs1VDCa8f0hNhCQ0DehdAeVqHfovwUSWw+5F7WhgSlUrZAQN2RodzehWkRm6K/BqtQYnyA==}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
 
   '@types/esrecurse@4.3.1':
     resolution: {integrity: sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==}
@@ -2488,6 +2508,23 @@ snapshots:
       espree: 10.4.0
       estraverse: 5.3.0
       picomatch: 4.0.3
+
+  '@tanstack/eslint-plugin-query@5.91.4(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/utils': 8.56.1(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
+      eslint: 10.0.2(jiti@2.6.1)
+    optionalDependencies:
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@tanstack/eslint-plugin-router@1.161.4(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/utils': 8.56.1(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
+      eslint: 10.0.2(jiti@2.6.1)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
   '@types/esrecurse@4.3.1': {}
 
