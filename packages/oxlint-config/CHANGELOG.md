@@ -1,5 +1,12 @@
 # @jarsec/oxlint-config
 
+## 0.2.0
+
+### Minor Changes
+
+- 10940ed: Add oxlint configuration
+- 63dcd13: Simplify base config file
+
 ## 0.1.2
 
 ### Patch Changes
