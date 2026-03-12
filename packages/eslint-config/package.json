@@ -1,6 +1,6 @@
 {
     "name": "@jarsec/eslint-config",
-    "version": "7.0.1",
+    "version": "7.1.0",
     "type": "module",
     "description": "jsec's eslint configurations",
     "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",

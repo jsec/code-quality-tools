@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 7.1.0
+
+### Minor Changes
+
+- c63b2f9: Update React config to support TanStack configs
+
 ## 7.0.1
 
 ### Patch Changes
