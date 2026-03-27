@@ -58,7 +58,7 @@ importers:
         version: 5.91.4(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)
       '@tanstack/eslint-plugin-router':
         specifier: ^1.161.4
-        version: 1.161.4(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)
+        version: 1.161.5(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)
       eslint:
         specifier: ^10.0.2
         version: 10.0.3(jiti@2.6.1)
@@ -661,8 +661,8 @@ packages:
       typescript:
         optional: true
 
-  '@tanstack/eslint-plugin-router@1.161.4':
-    resolution: {integrity: sha512-Cw6naM1QII0DEpjQvs1VDCa8f0hNhCQ0DehdAeVqHfovwUSWw+5F7WhgSlUrZAQN2RodzehWkRm6K/BqtQYnyA==}
+  '@tanstack/eslint-plugin-router@1.161.5':
+    resolution: {integrity: sha512-NXtxTCKEfH311+3lFvwlxKCifktVynCIt4ys/7yDpIBjerWfda8CWlEXb/eOSL906khEpGw6CrEOOzd1hfvhgw==}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
 
@@ -2496,7 +2496,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/eslint-plugin-router@1.161.4(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)':
+  '@tanstack/eslint-plugin-router@1.161.5(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/utils': 8.57.0(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)
       eslint: 10.0.3(jiti@2.6.1)
