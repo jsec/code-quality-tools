@@ -19,7 +19,7 @@
         "provenance": true
     },
     "dependencies": {
-        "oxfmt": "^0.42.0",
+        "oxfmt": "^0.43.0",
         "oxlint": "^1.49.0",
         "oxlint-tsgolint": "^0.17.0"
     }
