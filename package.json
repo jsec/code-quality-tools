@@ -12,7 +12,7 @@
         "release": "turbo build && changeset publish"
     },
     "devDependencies": {
-        "@changesets/cli": "2.30.0",
+        "@changesets/cli": "2.31.0",
         "@jarsec/eslint-config": "workspace:*",
         "@jarsec/prettier-config": "workspace:*",
         "@jarsec/tsconfig": "workspace:*",
@@ -22,7 +22,7 @@
         "prettier": "3.7.4",
         "turbo": "latest"
     },
-    "packageManager": "pnpm@10.33.0",
+    "packageManager": "pnpm@10.33.2",
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
