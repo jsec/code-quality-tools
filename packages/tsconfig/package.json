@@ -1,13 +1,13 @@
 {
   "name": "@jarsec/tsconfig",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "jsec's tsconfig configurations",
   "license": "MIT",
   "author": "Jarrod Seccombe <jarrod.seccombe@icloud.com>",
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/jsec/code-quality-tools.git",
-      "directory": "packages/tsconfig"
+    "type": "git",
+    "url": "git+https://github.com/jsec/code-quality-tools.git",
+    "directory": "packages/tsconfig"
   },
   "publishConfig": {
     "access": "public",

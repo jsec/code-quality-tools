@@ -1,5 +1,15 @@
 # @jarsec/eslint-config
 
+## 7.2.0
+
+### Minor Changes
+
+- 057c130: Update to TypeScript 6
+
+### Patch Changes
+
+- 921b6c9: fix(deps): update eslint ecosystem (major)
+
 ## 7.1.0
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @jarsec/biome-config
 
+## 0.0.5
+
+### Patch Changes
+
+- dd608c1: chore(deps): update dependency @biomejs/biome to v2.4.7
+- 01abe06: chore(deps): update dependency @biomejs/biome to v2.4.13
+- b88d313: chore(deps): update dependency @biomejs/biome to v2.4.10
+
 ## 0.0.4
 
 ### Patch Changes

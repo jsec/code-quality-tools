@@ -1,5 +1,23 @@
 # @jarsec/oxlint-config
 
+## 1.0.0
+
+### Major Changes
+
+- 985dd8e: Finalize oxlint config.
+  - Update to latest oxlint
+  - Update to latest oxlint-tsgolint
+  - Map eslint config to oxlint config.
+
+### Patch Changes
+
+- 4d535a5: fix(deps): update dependency oxfmt to ^0.43.0
+- 483679c: fix(deps): update dependency oxfmt to ^0.42.0
+- 8b80827: fix(deps): update dependency oxlint-tsgolint to ^0.17.0
+- d62c73d: fix(deps): update dependency oxlint-tsgolint to ^0.20.0
+- 12eed3d: fix(deps): update dependency oxlint-tsgolint to ^0.16.0
+- c348d6a: fix(deps): update dependency oxfmt to ^0.45.0
+
 ## 0.2.0
 
 ### Minor Changes
