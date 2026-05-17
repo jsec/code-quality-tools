@@ -19,7 +19,7 @@
         "./react": "./configs/react.js"
     },
     "scripts": {
-        "lint": "eslint --fix ."
+        "lint": "oxlint --fix ."
     },
     "dependencies": {
         "@eslint-react/eslint-plugin": "^4.0.0",
