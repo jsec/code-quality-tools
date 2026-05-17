@@ -13,6 +13,9 @@
     "access": "public",
     "provenance": true
   },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  },
   "exports": {
     "./bundler/node": "./node/bundler.json",
     "./bundler/web": "./web/bundler.json",
