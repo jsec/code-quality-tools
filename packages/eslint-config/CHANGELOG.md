@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 7.2.1
+
+### Patch Changes
+
+- 391167d: Update typescript-eslint to TS v6 supported version
+
 ## 7.2.0
 
 ### Minor Changes
