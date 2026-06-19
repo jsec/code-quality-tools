@@ -22,13 +22,13 @@
         "lint": "oxlint --fix ."
     },
     "dependencies": {
-        "@eslint-react/eslint-plugin": "^4.0.0",
+        "@eslint-react/eslint-plugin": "^5.0.0",
         "@eslint/js": "^10.0.1",
         "@stylistic/eslint-plugin": "^5.9.0",
         "@tanstack/eslint-plugin-query": "^5.91.4",
         "@tanstack/eslint-plugin-router": "^1.161.4",
         "eslint": "^10.0.2",
-        "eslint-plugin-n": "^17.24.0",
+        "eslint-plugin-n": "^18.0.0",
         "eslint-plugin-perfectionist": "^5.6.0",
         "eslint-plugin-unicorn": "^64.0.0",
         "globals": "^17.3.0",
