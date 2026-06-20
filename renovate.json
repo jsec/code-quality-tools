@@ -1,73 +1,47 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-	  "config:recommended",
-	  ":dependencyDashboard",
-	  "replacements:all",
-	  "workarounds:all",
-	  "helpers:disableTypesNodeMajor",
-	  "helpers:pinGitHubActionDigests"
+    "config:best-practices",
+    ":dependencyDashboard",
+    "replacements:all",
+    "workarounds:all",
+    "helpers:disableTypesNodeMajor"
   ],
   "schedule": ["every 2 weeks on Sunday"],
   "rebaseWhen": "conflicted",
   "rangeStrategy": "replace",
   "labels": ["dependencies"],
+  "automergeStrategy": "squash",
+  "platformAutomerge": false,
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["every 2 weeks on Sunday"]
   },
   "major": {
-	  "minimumReleaseAge": "30 days"
+    "minimumReleaseAge": "30 days"
   },
   "minor": {
-	  "minimumReleaseAge": "7 days"
+    "minimumReleaseAge": "7 days"
   },
   "packageRules": [
     {
-      "description": "ESLint ecosystem",
-      "groupName": "eslint ecosystem",
-      "matchPackageNames": [
-        "eslint",
-        "@eslint/js",
-        "@eslint-react/eslint-plugin",
-        "eslint-plugin-n",
-        "eslint-plugin-perfectionist",
-        "eslint-plugin-unicorn",
-        "@stylistic/eslint-plugin",
-        "typescript-eslint"
-      ]
+      "description": "Automerge patch updates",
+      "matchUpdateTypes": ["patch"],
+      "groupName": "patch dependencies",
+      "groupSlug": "patch",
+      "automerge": true
     },
     {
-      "description": "TypeScript",
-      "groupName": "typescript",
-      "matchPackageNames": ["typescript", "@types/node"]
+      "description": "Automerge minor updates",
+      "matchUpdateTypes": ["minor"],
+      "groupName": "minor dependencies",
+      "groupSlug": "minor",
+      "automerge": true
     },
     {
-      "description": "Oxlint",
-      "groupName": "oxlint",
-      "matchPackageNames": ["oxlint", "oxlint-tsgolint"]
-    },
-    {
-      "description": "Biome",
-      "groupName": "biome",
-      "matchPackageNames": ["@biomejs/biome"]
-    },
-    {
-      "description": "Build tooling",
-      "groupName": "build tooling",
-      "matchPackageNames": ["turbo"],
-      "rangeStrategy": "pin"
-    },
-    {
-      "description": "Release tooling",
-      "groupName": "release tooling",
-      "matchPackageNames": ["@changesets/cli"],
-      "matchUpdateTypes": ["minor", "patch"]
-    },
-    {
-      "description": "Commit tooling",
-      "groupName": "commit tooling",
-      "matchPackageNames": ["commitizen", "cz-conventional-changelog"]
+      "description": "Major updates",
+      "matchUpdateTypes": ["major"],
+      "automerge": false
     }
   ]
 }
