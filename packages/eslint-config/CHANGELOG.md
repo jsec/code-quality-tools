@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 7.2.2
+
+### Patch Changes
+
+- 45bf051: fix(deps): update eslint ecosystem (major)
+
 ## 7.2.1
 
 ### Patch Changes
