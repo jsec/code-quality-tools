@@ -21,13 +21,13 @@ importers:
         specifier: workspace:*
         version: link:packages/tsconfig
       commitizen:
-        specifier: 4.3.1
-        version: 4.3.1(@types/node@24.13.1)(typescript@6.0.3)
+        specifier: 4.3.2
+        version: 4.3.2(@types/node@24.13.1)(typescript@6.0.3)
       cz-conventional-changelog:
         specifier: 3.3.0
         version: 3.3.0(@types/node@24.13.1)(typescript@6.0.3)
       eslint-plugin-perfectionist:
-        specifier: ^5.6.0
+        specifier: ^5.9.0
         version: 5.9.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3)
       oxlint:
         specifier: ^1.49.0
@@ -82,7 +82,7 @@ importers:
         version: 8.60.1(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3)
     devDependencies:
       '@types/node':
-        specifier: ^24.10.15
+        specifier: ^24.13.1
         version: 24.13.1
       typescript:
         specifier: ^6.0.3
@@ -940,6 +940,10 @@ packages:
     resolution: {integrity: sha512-A+Fezp4zxnit6FanDmv9EqXNAi3vt9DWp51/71UEhXukb7QUuvtv9344h91dyAxuTLoSYJFU299qzR3tzwPAhw==}
     engines: {node: '>=6'}
 
+  cachedir@2.4.0:
+    resolution: {integrity: sha512-9EtFOZR8g22CL7BWjJ9BUx1+A/djkofnyW3aOXZORNW2kxoUpx2h+uN2cOqwPmFhnpVmxg+KW2OjOSgChTEvsQ==}
+    engines: {node: '>=6'}
+
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
@@ -1004,6 +1008,11 @@ packages:
   commitizen@4.3.1:
     resolution: {integrity: sha512-gwAPAVTy/j5YcOOebcCRIijn+mSjWJC+IYKivTu6aG8Ei/scoXgfsMRnuAk6b0GRste2J4NGxVdMN3ZpfNaVaw==}
     engines: {node: '>= 12'}
+    hasBin: true
+
+  commitizen@4.3.2:
+    resolution: {integrity: sha512-1Zs37z9JPvAcuTSSricZZwBhOPVNNxJouuY4yDEt+eD70EoxT2TU9kViG8CuB/PmVg2G4XsAGQiK4YCst97aDQ==}
+    engines: {node: '>= 18'}
     hasBin: true
 
   compare-versions@6.1.1:
@@ -1453,6 +1462,10 @@ packages:
     resolution: {integrity: sha512-QAgPDQMEgrDssk1XiwwHoOGYF9BAbUcc1+j+FhEvaOt8/cKRqyLn0U5qA6F74fGhTMGxf92pOvPBeh29jQJDTQ==}
     engines: {node: '>=12.0.0'}
 
+  inquirer@8.2.7:
+    resolution: {integrity: sha512-UjOaSel/iddGZJ5xP/Eixh6dY1XghiBw4XK13rCCIJcJfyhhoul/7KhLLUGtebEj6GDYM6Vnx/mVsjx2L/mFIA==}
+    engines: {node: '>=12.0.0'}
+
   is-arrayish@0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
 
@@ -1570,6 +1583,9 @@ packages:
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
   log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
@@ -1606,6 +1622,9 @@ packages:
 
   minimist@1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
+
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -2010,6 +2029,10 @@ packages:
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
+
+  wrap-ansi@6.2.0:
+    resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
+    engines: {node: '>=8'}
 
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
@@ -2651,7 +2674,7 @@ snapshots:
   '@typescript-eslint/project-service@8.60.1(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.60.1(typescript@6.0.3)
-      '@typescript-eslint/types': 8.60.1
+      '@typescript-eslint/types': 8.61.1
       debug: 4.4.3
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -2871,6 +2894,8 @@ snapshots:
 
   cachedir@2.3.0: {}
 
+  cachedir@2.4.0: {}
+
   callsites@3.1.0:
     optional: true
 
@@ -2935,6 +2960,26 @@ snapshots:
       is-utf8: 0.2.1
       lodash: 4.17.21
       minimist: 1.2.7
+      strip-bom: 4.0.0
+      strip-json-comments: 3.1.1
+    transitivePeerDependencies:
+      - '@types/node'
+      - typescript
+
+  commitizen@4.3.2(@types/node@24.13.1)(typescript@6.0.3):
+    dependencies:
+      cachedir: 2.4.0
+      cz-conventional-changelog: 3.3.0(@types/node@24.13.1)(typescript@6.0.3)
+      dedent: 0.7.0
+      detect-indent: 6.1.0
+      find-node-modules: 2.1.3
+      find-root: 1.1.0
+      fs-extra: 9.1.0
+      glob: 7.2.3
+      inquirer: 8.2.7(@types/node@24.13.1)
+      is-utf8: 0.2.1
+      lodash: 4.18.1
+      minimist: 1.2.8
       strip-bom: 4.0.0
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
@@ -3074,7 +3119,7 @@ snapshots:
 
   eslint-plugin-perfectionist@5.9.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3):
     dependencies:
-      '@typescript-eslint/utils': 8.60.1(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.61.1(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3)
       eslint: 10.4.1(jiti@2.6.1)
       natural-orderby: 5.0.0
     transitivePeerDependencies:
@@ -3495,6 +3540,26 @@ snapshots:
       through: 2.3.8
       wrap-ansi: 7.0.0
 
+  inquirer@8.2.7(@types/node@24.13.1):
+    dependencies:
+      '@inquirer/external-editor': 1.0.3(@types/node@24.13.1)
+      ansi-escapes: 4.3.2
+      chalk: 4.1.2
+      cli-cursor: 3.1.0
+      cli-width: 3.0.0
+      figures: 3.2.0
+      lodash: 4.17.21
+      mute-stream: 0.0.8
+      ora: 5.4.1
+      run-async: 2.4.1
+      rxjs: 7.8.2
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+      through: 2.3.8
+      wrap-ansi: 6.2.0
+    transitivePeerDependencies:
+      - '@types/node'
+
   is-arrayish@0.2.1:
     optional: true
 
@@ -3594,6 +3659,8 @@ snapshots:
 
   lodash@4.17.21: {}
 
+  lodash@4.18.1: {}
+
   log-symbols@4.1.0:
     dependencies:
       chalk: 4.1.2
@@ -3624,6 +3691,8 @@ snapshots:
       brace-expansion: 1.1.15
 
   minimist@1.2.7: {}
+
+  minimist@1.2.8: {}
 
   mri@1.2.0: {}
 
@@ -3995,6 +4064,12 @@ snapshots:
       isexe: 2.0.0
 
   word-wrap@1.2.5: {}
+
+  wrap-ansi@6.2.0:
+    dependencies:
+      ansi-styles: 4.3.0
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
 
   wrap-ansi@7.0.0:
     dependencies:
