@@ -16,9 +16,9 @@
         "@jarsec/oxlint-config": "workspace:*",
         "@jarsec/prettier-config": "workspace:*",
         "@jarsec/tsconfig": "workspace:*",
-        "commitizen": "4.3.1",
+        "commitizen": "4.3.2",
         "cz-conventional-changelog": "3.3.0",
-        "eslint-plugin-perfectionist": "^5.6.0",
+        "eslint-plugin-perfectionist": "^5.9.0",
         "oxlint": "^1.49.0",
         "prettier": "3.7.4",
         "turbo": "latest"
