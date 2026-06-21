@@ -1,5 +1,13 @@
 # @jarsec/eslint-config
 
+## 7.2.3
+
+### Patch Changes
+
+- 35e5183: Update dependencies:
+
+  - @types/node 24.13.1 -> 24.13.2
+
 ## 7.2.2
 
 ### Patch Changes
