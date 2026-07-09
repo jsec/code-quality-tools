@@ -22,7 +22,6 @@ export default [
             '@eslint-react/no-array-index-key': 'error',
             '@eslint-react/no-leaked-conditional-rendering': 'error',
             '@eslint-react/no-missing-key': 'error',
-            '@eslint-react/prefer-destructuring-assignment': 'error',
             'n/no-missing-import': 'off',
             'n/no-unpublished-import': 'off',
             'n/no-unsupported-features/node-builtins': 'off',
