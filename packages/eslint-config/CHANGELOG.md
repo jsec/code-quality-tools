@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 7.3.0
+
+### Minor Changes
+
+- 4b19635: remove prefer-read-only-props rule
+
 ## 7.2.3
 
 ### Patch Changes
