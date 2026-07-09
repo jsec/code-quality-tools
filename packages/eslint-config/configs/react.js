@@ -23,7 +23,6 @@ export default [
             '@eslint-react/no-leaked-conditional-rendering': 'error',
             '@eslint-react/no-missing-key': 'error',
             '@eslint-react/prefer-destructuring-assignment': 'error',
-            '@eslint-react/prefer-read-only-props': 'error',
             'n/no-missing-import': 'off',
             'n/no-unpublished-import': 'off',
             'n/no-unsupported-features/node-builtins': 'off',
