@@ -1,5 +1,11 @@
 # @jarsec/oxlint-config
 
+## 1.0.3
+
+### Patch Changes
+
+- 65a749f: fix(deps): update dependency oxfmt to ^0.56.0
+
 ## 1.0.2
 
 ### Patch Changes
