@@ -27,8 +27,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(@types/node@24.13.2)(typescript@6.0.3)
       eslint-plugin-perfectionist:
-        specifier: 5.9.1
-        version: 5.9.1(eslint@10.7.0(jiti@2.6.1))(typescript@6.0.3)
+        specifier: 5.10.0
+        version: 5.10.0(eslint@10.7.0(jiti@2.6.1))(typescript@6.0.3)
       oxlint:
         specifier: 1.73.0
         version: 1.73.0(oxlint-tsgolint@0.24.0)
@@ -1217,6 +1217,12 @@ packages:
         optional: true
       typescript:
         optional: true
+
+  eslint-plugin-perfectionist@5.10.0:
+    resolution: {integrity: sha512-HiqpDrUDbGrMC6iHQbemgDyHJ0366Vyz/qRWmxQcSAkmG25cXr8BdRgx8yAhOKhEfBXn8Rnf/mTCsV4EqUJSxg==}
+    engines: {node: ^20.0.0 || >=22.0.0}
+    peerDependencies:
+      eslint: ^8.45.0 || ^9.0.0 || ^10.0.0
 
   eslint-plugin-perfectionist@5.9.1:
     resolution: {integrity: sha512-30mHLNfEhzwaq5cquyWgnzrNXvT8AzwIwyeH5aj4U5ajhHSF2uiO6i09xpMDLv7koaZVTjLsvYF4m3gK/15tyA==}
@@ -3132,6 +3138,15 @@ snapshots:
       semver: 7.8.5
     optionalDependencies:
       typescript: 6.0.3
+
+  eslint-plugin-perfectionist@5.10.0(eslint@10.7.0(jiti@2.6.1))(typescript@6.0.3):
+    dependencies:
+      '@typescript-eslint/utils': 8.63.0(eslint@10.7.0(jiti@2.6.1))(typescript@6.0.3)
+      eslint: 10.7.0(jiti@2.6.1)
+      natural-orderby: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
   eslint-plugin-perfectionist@5.9.1(eslint@10.7.0(jiti@2.6.1))(typescript@6.0.3):
     dependencies:
