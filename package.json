@@ -12,7 +12,7 @@
         "release": "turbo build && changeset publish"
     },
     "devDependencies": {
-        "@changesets/cli": "2.31.0",
+        "@changesets/cli": "2.31.1",
         "@jarsec/oxlint-config": "workspace:*",
         "@jarsec/prettier-config": "workspace:*",
         "@jarsec/tsconfig": "workspace:*",
