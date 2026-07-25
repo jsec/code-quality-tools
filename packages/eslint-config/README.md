@@ -1,6 +1,6 @@
 # ESLint Configuration
 
-*Note:* This configuration requires ESLint >9.
+*Note:* This configuration requires ESLint >=10.4.
 
 This package contains my standard ESLint configuration.
 
@@ -10,6 +10,7 @@ Rules are collected from the following shared configurations:
 - `typescript-eslint` recommended and stylistic configurations.
 - `eslint-plugin-unicorn`
 - `eslint-plugin-perfectionist`
+- `eslint-package-json`
 - `@stylistic` code style configuration.
 
 ### Installation

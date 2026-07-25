@@ -3,21 +3,24 @@
 import eslintReact from '@eslint-react/eslint-plugin';
 import tanstackQuery from '@tanstack/eslint-plugin-query';
 import tanstackRouter from '@tanstack/eslint-plugin-router';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 
 import base from './base.js';
+import { sourceFileGlob } from './globs.js';
 
-export default [
+export default defineConfig([
     ...base,
-    eslintReact.configs['recommended-type-checked'],
-    ...tanstackQuery.configs['flat/recommended'],
-    ...tanstackRouter.configs['flat/recommended'],
     {
+        extends: [
+            eslintReact.configs['recommended-type-checked'],
+            tanstackQuery.configs['flat/recommended'],
+            tanstackRouter.configs['flat/recommended'],
+        ],
+        files: sourceFileGlob,
         languageOptions: {
             globals: globals.browser,
         },
-    },
-    {
         rules: {
             '@eslint-react/no-array-index-key': 'error',
             '@eslint-react/no-leaked-conditional-rendering': 'error',
@@ -28,4 +31,4 @@ export default [
             'unicorn/no-anonymous-default-export': 'error',
         },
     },
-];
+]);
