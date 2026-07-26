@@ -5,11 +5,12 @@
         "build": "turbo build",
         "dev": "turbo dev --no-cache --continue",
         "lint": "oxlint . && turbo lint",
+        "test": "turbo test",
         "clean": "turbo clean && rm -rf node_modules",
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "changeset": "changeset",
         "version-packages": "changeset version",
-        "release": "turbo build && changeset publish"
+        "release": "turbo build && turbo test && changeset publish"
     },
     "devDependencies": {
         "@changesets/cli": "2.31.1",
