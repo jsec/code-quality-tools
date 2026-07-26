@@ -1,5 +1,17 @@
 # @jarsec/eslint-config
 
+## 7.4.0
+
+### Minor Changes
+
+- 96fa1ff: Bump eslint to ^10.4
+- baa269e: add a handful of neostandard rules
+- 96fa1ff: Add eslint-package-json
+
+### Patch Changes
+
+- f720ad6: Fix extension in globs file import
+
 ## 7.3.1
 
 ### Patch Changes
