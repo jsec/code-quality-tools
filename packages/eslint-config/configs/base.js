@@ -8,7 +8,7 @@ import packageJson from 'eslint-package-json';
 import unicorn from 'eslint-plugin-unicorn';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
-import { jsFileGlob, sourceFileGlob } from './globs';
+import { jsFileGlob, sourceFileGlob } from './globs.js';
 
 export default defineConfig([
     {
