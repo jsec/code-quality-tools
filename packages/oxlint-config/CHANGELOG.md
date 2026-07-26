@@ -1,5 +1,17 @@
 # @jarsec/oxlint-config
 
+## 1.1.0
+
+### Minor Changes
+
+- 5ccdc6c: add various unicorn and correctness rules
+- 35744b1: add no-undef, no-uesless-assignment, and no-return-in-finally
+
+### Patch Changes
+
+- caf9734: fix(deps): update dependency oxfmt to ^0.58.0
+- 6a31cc2: fix(deps): update oxlint
+
 ## 1.0.3
 
 ### Patch Changes
