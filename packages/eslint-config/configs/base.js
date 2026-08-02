@@ -56,9 +56,9 @@ export default defineConfig([
             'no-useless-call': 'error',
             'prefer-promise-reject-errors': 'error',
             'prefer-regex-literals': 'error',
+            'unicorn/name-replacements': 'off',
             'unicorn/no-null': 'off', // TODO: revisit this
             'unicorn/no-process-exit': 'off',
-            'unicorn/prevent-abbreviations': 'off',
         },
     },
     {
