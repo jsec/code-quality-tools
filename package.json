@@ -24,7 +24,7 @@
         "prettier": "3.8.4",
         "turbo": "latest"
     },
-    "packageManager": "pnpm@11.11.0",
+    "packageManager": "pnpm@11.17.0",
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
