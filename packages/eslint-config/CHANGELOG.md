@@ -1,5 +1,17 @@
 # @jarsec/eslint-config
 
+## 7.5.0
+
+### Minor Changes
+
+- a1ee4af: fix(deps): update dependency eslint-plugin-unicorn to v72
+
+### Patch Changes
+
+- 6b5a762: Update unicorn/prevent-abbreviations to unicorn/name-replacements
+- fc5d43d: fix(deps): update dependency eslint-plugin-unicorn to v70
+- ee0c49c: fix(deps): update dependency eslint-package-json to ^0.3.0
+
 ## 7.4.0
 
 ### Minor Changes
