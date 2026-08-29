@@ -1,6 +1,6 @@
 {
     "name": "@jarsec/biome-config",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "jsec's Biome configurations",
     "homepage": "https://github.com/jsec/code-quality-tools#readme",
     "repository": {
