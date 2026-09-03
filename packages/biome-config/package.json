@@ -14,7 +14,7 @@
         ".": "./configs/biome.json"
     },
     "devDependencies": {
-        "@biomejs/biome": "2.5.8"
+        "@biomejs/biome": "2.5.12"
     },
     "publishConfig": {
         "access": "public",
