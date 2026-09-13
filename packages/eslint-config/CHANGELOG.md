@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 7.5.1
+
+### Patch Changes
+
+- 3585f17: chore(deps): update dependency eslint-plugin-perfectionist to v5.11.0
+
 ## 7.5.0
 
 ### Minor Changes
