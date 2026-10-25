@@ -1,5 +1,15 @@
 # @jarsec/eslint-config
 
+## 7.5.1
+
+### Patch Changes
+
+- 6441834: fix(deps): update dependency eslint-plugin-unicorn to v74
+- 505bdb2: chore(deps): update dependency oxlint to v1.81.0
+- a9aa16d: fix(deps): update dependency eslint-package-json to v1
+- 3585f17: chore(deps): update dependency eslint-plugin-perfectionist to v5.11.0
+- aa4e145: fix(deps): update dependency eslint-plugin-unicorn to v73
+
 ## 7.5.0
 
 ### Minor Changes
