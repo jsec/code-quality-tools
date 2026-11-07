@@ -1,5 +1,11 @@
 # @jarsec/eslint-config
 
+## 7.5.2
+
+### Patch Changes
+
+- b6ad6aa: fix(deps): update dependency eslint-plugin-unicorn to v76
+
 ## 7.5.1
 
 ### Patch Changes
