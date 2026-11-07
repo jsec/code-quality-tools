@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import path from 'node:path';
 import test from 'node:test';
 
 import { ESLint } from 'eslint';
@@ -6,7 +7,18 @@ import { ESLint } from 'eslint';
 import reactConfig from '@jarsec/eslint-config/react';
 
 const eslint = new ESLint({
-    overrideConfig: reactConfig,
+    overrideConfig: [
+        ...reactConfig,
+        {
+            files: ['**/*.tsx'],
+            languageOptions: {
+                parserOptions: {
+                    projectService: { allowDefaultProject: ['*.tsx'] },
+                    tsconfigRootDir: path.join(import.meta.dirname, '..'),
+                },
+            },
+        },
+    ],
     overrideConfigFile: true,
 });
 
@@ -56,4 +68,13 @@ test('rejects array indexes as TSX keys', async () => {
     );
 
     assert.deepEqual(ruleIds, ['@eslint-react/no-array-index-key']);
+});
+
+test('should report leaked conditional rendering in TSX', async () => {
+    const ruleIds = await lint(
+        'export const Count = ({ count }: { count: number }) => <div>{count && <span />}</div>;\n',
+        'leaked.tsx',
+    );
+
+    assert.deepEqual(ruleIds, ['@eslint-react/no-leaked-conditional-rendering']);
 });

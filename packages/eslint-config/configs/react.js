@@ -7,7 +7,7 @@ import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 
 import base from './base.js';
-import { sourceFileGlob } from './globs.js';
+import { jsFileGlob, sourceFileGlob } from './globs.js';
 
 export default defineConfig([
     ...base,
@@ -20,6 +20,9 @@ export default defineConfig([
         files: sourceFileGlob,
         languageOptions: {
             globals: globals.browser,
+            parserOptions: {
+                projectService: true,
+            },
         },
         rules: {
             '@eslint-react/no-array-index-key': 'error',
@@ -29,6 +32,15 @@ export default defineConfig([
             'n/no-unpublished-import': 'off',
             'n/no-unsupported-features/node-builtins': 'off',
             'unicorn/no-anonymous-default-export': 'error',
+        },
+    },
+    {
+        extends: [eslintReact.configs['disable-type-checked']],
+        files: jsFileGlob,
+        languageOptions: {
+            parserOptions: {
+                projectService: false,
+            },
         },
     },
 ]);
