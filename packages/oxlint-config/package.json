@@ -1,6 +1,6 @@
 {
     "name": "@jarsec/oxlint-config",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "jsec's oxlint and oxfmt configurations",
     "homepage": "https://github.com/jsec/code-quality-tools#readme",
     "license": "MIT",

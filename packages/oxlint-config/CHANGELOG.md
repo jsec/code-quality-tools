@@ -1,5 +1,11 @@
 # @jarsec/oxlint-config
 
+## 2.1.0
+
+### Minor Changes
+
+- 2718fe5: Put operators at the end of wrapped lines
+
 ## 2.0.0
 
 ### Major Changes
