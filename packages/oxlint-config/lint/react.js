@@ -9,6 +9,15 @@ export default defineConfig({
         browser: true,
     },
     extends: [base],
+    overrides: [
+        {
+            files: ['**/routes/**'],
+            rules: {
+                'react/only-export-components': 'off',
+                'unicorn/filename-case': 'off',
+            },
+        },
+    ],
     plugins: ['react'],
     rules: {
         'react/button-has-type': 'error',
@@ -29,7 +38,6 @@ export default defineConfig({
         'react/jsx-fragments': 'error',
         'react/jsx-handler-names': 'error',
         'react/jsx-key': ['error', { checkKeyMustBeforeSpread: true }],
-        'react/jsx-max-depth': ['error', { max: 5 }],
         'react/jsx-no-comment-textnodes': 'error',
         'react/jsx-no-constructed-context-values': 'error',
         'react/jsx-no-duplicate-props': 'error',
@@ -76,6 +84,18 @@ export default defineConfig({
         'react/use-memo': 'error',
         'react/void-dom-elements-no-children': 'error',
         'react/void-use-memo': 'error',
+        'typescript/only-throw-error': [
+            'error',
+            {
+                allow: [
+                    {
+                        from: 'package',
+                        name: ['NotFoundError', 'Redirect'],
+                        package: '@tanstack/router-core',
+                    },
+                ],
+            },
+        ],
         'unicorn/no-anonymous-default-export': 'error',
     },
 });

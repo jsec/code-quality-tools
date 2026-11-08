@@ -13,6 +13,14 @@ export default defineConfig({
     insertFinalNewline: true,
     jsxSingleQuote: false,
     objectWrap: 'preserve',
+    overrides: [
+        {
+            files: ['*.json', '*.jsonc', '*.yaml', '*.yml'],
+            options: {
+                tabWidth: 2,
+            },
+        },
+    ],
     printWidth: 100,
     proseWrap: 'preserve',
     quoteProps: 'consistent',
@@ -21,10 +29,11 @@ export default defineConfig({
     singleQuote: true,
     sortImports: {
         groups: [
-            'builtin',
-            'type',
-            'external',
+            ['type-builtin', 'type-external'],
+            ['builtin', 'external'],
+            'type-internal',
             ['internal', 'subpath'],
+            ['type-parent', 'type-sibling', 'type-index'],
             ['parent', 'sibling', 'index'],
             'style',
             'unknown',

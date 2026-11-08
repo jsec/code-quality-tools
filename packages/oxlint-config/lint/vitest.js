@@ -5,6 +5,7 @@ export default {
     files: ['**/*.test.*', '**/*.spec.*'],
     plugins: ['vitest'],
     rules: {
+        'typescript/no-unsafe-assignment': 'off',
         'vitest/consistent-each-for': 'error',
         'vitest/consistent-test-filename': 'error',
         'vitest/consistent-test-it': ['error', { fn: 'it' }],
@@ -31,7 +32,6 @@ export default {
         'vitest/prefer-called-exactly-once-with': 'error',
         'vitest/prefer-called-once': 'error',
         'vitest/prefer-comparison-matcher': 'error',
-        'vitest/prefer-describe-function-title': 'error',
         'vitest/prefer-equality-matcher': 'error',
         'vitest/prefer-expect-resolves': 'error',
         'vitest/prefer-expect-type-of': 'error',
