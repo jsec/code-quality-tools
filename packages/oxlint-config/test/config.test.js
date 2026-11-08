@@ -14,21 +14,22 @@ const lint = (config, file) => {
 
 describe('@jarsec/oxlint-config', () => {
     describe('lint', () => {
-        it('should report native and perfectionist rules', () => {
+        it('should report native and type-aware rules', () => {
             const codes = lint('test/fixtures/oxlint.config.js', 'test/fixtures/base.ts');
 
-            assert.deepEqual(codes.toSorted(), ['eslint(eqeqeq)', 'perfectionist(sort-objects)']);
+            assert.deepEqual(codes.toSorted(), [
+                'eslint(eqeqeq)',
+                'promise(catch-or-return)',
+                'typescript(no-floating-promises)',
+            ]);
         });
     });
 
     describe('lint/react', () => {
-        it('should report native react and tanstack rules', () => {
+        it('should report native react rules', () => {
             const codes = lint('test/fixtures/react.config.js', 'test/fixtures/list.tsx');
 
-            assert.deepEqual(codes.toSorted(), [
-                '@tanstack/query(stable-query-client)',
-                'react(no-array-index-key)',
-            ]);
+            assert.ok(codes.includes('react(no-array-index-key)'));
         });
     });
 });

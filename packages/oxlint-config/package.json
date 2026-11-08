@@ -23,17 +23,14 @@
     "scripts": {
         "test": "node --test test/*.test.js"
     },
-    "dependencies": {
-        "@tanstack/eslint-plugin-query": "^5.91.4",
-        "@tanstack/eslint-plugin-router": "^1.161.4",
-        "eslint-plugin-perfectionist": "^5.13.0"
-    },
     "devDependencies": {
         "oxfmt": "0.77.0",
-        "oxlint": "1.92.0"
+        "oxlint": "1.92.0",
+        "oxlint-tsgolint": "7.0.2005"
     },
     "peerDependencies": {
         "oxfmt": "^0.77.0",
-        "oxlint": "^1.92.0"
+        "oxlint": "^1.92.0",
+        "oxlint-tsgolint": "^7.0.2005"
     }
 }

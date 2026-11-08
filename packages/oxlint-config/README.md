@@ -7,7 +7,7 @@ This guide shows how to add the shared oxlint and oxfmt configurations to a proj
 Install the configuration package and its peer dependencies:
 
 ```sh
-npm install --save-dev @jarsec/oxlint-config oxlint oxfmt
+npm install --save-dev @jarsec/oxlint-config oxlint oxlint-tsgolint oxfmt
 ```
 
 ## Lint with the shared configuration
@@ -25,6 +25,8 @@ npm install --save-dev @jarsec/oxlint-config oxlint oxfmt
     ```
 
     For a React project, import `@jarsec/oxlint-config/lint/react` instead. The React configuration includes the base configuration.
+
+    The configuration runs type-aware rules on TypeScript files, which read your `tsconfig.json`. JavaScript files get only the rules that don't need type information.
 
 1.  Run oxlint:
 

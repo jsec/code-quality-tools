@@ -57,7 +57,8 @@ export default defineConfig([
             'prefer-promise-reject-errors': 'error',
             'prefer-regex-literals': 'error',
             'unicorn/name-replacements': 'off',
-            'unicorn/no-null': 'off', // TODO: revisit this
+            // TODO: revisit this
+            'unicorn/no-null': 'off',
             'unicorn/no-process-exit': 'off',
         },
     },

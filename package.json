@@ -1,6 +1,6 @@
 {
-    "private": true,
     "name": "code-quality-tools",
+    "private": true,
     "type": "module",
     "scripts": {
         "build": "turbo build",
@@ -21,12 +21,13 @@
         "cz-conventional-changelog": "3.3.0",
         "oxfmt": "0.77.0",
         "oxlint": "1.92.0",
+        "oxlint-tsgolint": "7.0.2005",
         "turbo": "latest"
     },
-    "packageManager": "pnpm@12.14.0",
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
-    }
+    },
+    "packageManager": "pnpm@12.14.0"
 }
