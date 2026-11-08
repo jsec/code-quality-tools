@@ -8,7 +8,6 @@ export default defineConfig({
     bracketSpacing: true,
     embeddedLanguageFormatting: 'auto',
     endOfLine: 'lf',
-    experimentalOperatorPosition: 'start',
     htmlWhitespaceSensitivity: 'css',
     insertFinalNewline: true,
     jsxSingleQuote: false,
