@@ -1,4 +1,4 @@
-import base from '@jarsec/oxlint-config/lint';
+import base from '@jarsec/oxlint-config/lint/node';
 import { defineConfig } from 'oxlint';
 
 export default defineConfig({
@@ -6,7 +6,8 @@ export default defineConfig({
     ignorePatterns: ['**/test/fixtures/**'],
     overrides: [
         {
-            files: ['**/test/**'],
+            files: ['**/*.test.*'],
+            plugins: ['vitest'],
             rules: {
                 'vitest/prefer-importing-vitest-globals': 'off',
             },

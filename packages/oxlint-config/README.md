@@ -24,7 +24,9 @@ npm install --save-dev @jarsec/oxlint-config oxlint oxlint-tsgolint oxfmt
     });
     ```
 
-    For a React project, import `@jarsec/oxlint-config/lint/react` instead. The React configuration includes the base configuration.
+    For a Node project, import `@jarsec/oxlint-config/lint/node` instead. For a React project, import `@jarsec/oxlint-config/lint/react`. Both include the base configuration.
+
+    Vitest rules run only on `*.test.*` and `*.spec.*` files. To change one of them, add an override for those files that also sets `plugins: ['vitest']`.
 
     The configuration runs type-aware rules on TypeScript files, which read your `tsconfig.json`. JavaScript files get only the rules that don't need type information.
 
@@ -34,7 +36,7 @@ npm install --save-dev @jarsec/oxlint-config oxlint oxlint-tsgolint oxfmt
     npx oxlint
     ```
 
-oxlint lists each rule violation with its file and line. If there are no violations, it prints nothing.
+oxlint lists each rule violation with its file and line.
 
 ## Format with the shared configuration
 

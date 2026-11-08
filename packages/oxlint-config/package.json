@@ -13,6 +13,7 @@
     "type": "module",
     "exports": {
         "./lint": "./lint/base.js",
+        "./lint/node": "./lint/node.js",
         "./lint/react": "./lint/react.js",
         "./fmt": "./fmt/base.js"
     },
