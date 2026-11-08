@@ -1,5 +1,28 @@
 # @jarsec/oxlint-config
 
+## 2.0.0
+
+### Major Changes
+
+- 78b2283: Ship configs as JS modules: `./lint`, `./lint/react`, `./fmt`
+- 5642efc: Remove perfectionist and TanStack JS plugins, use only native oxlint rules
+- d753548: Move node rules to `./lint/node` and run vitest rules only on test files
+- 78b2283: Move oxlint and oxfmt to peer dependencies
+- 5642efc: Turn on type-aware linting and add `oxlint-tsgolint` as a peer dependency
+
+### Minor Changes
+
+- 44e191c: Keep relative type imports with relative imports and indent JSON and YAML with 2 spaces
+- 78b2283: Put operators at the start of wrapped lines
+- 78b2283: Add missing core and unicorn rules from eslint-config, set correctness rules to error
+- 78b2283: Add react config
+- 5642efc: Rebuild the rule list from a review of every native rule
+- 44e191c: Allow TanStack Router route files, redirects and not-found errors in the react config
+
+### Patch Changes
+
+- d753548: Add type declarations for each export
+
 ## 1.1.3
 
 ### Patch Changes
