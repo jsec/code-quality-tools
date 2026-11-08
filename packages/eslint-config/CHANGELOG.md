@@ -1,5 +1,12 @@
 # @jarsec/eslint-config
 
+## 7.5.3
+
+### Patch Changes
+
+- 375a805: Enable projectService in react config so type-checked rules work
+- f9c8e84: fix(deps): update dependency eslint-package-json to v2
+
 ## 7.5.2
 
 ### Patch Changes
