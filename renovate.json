@@ -28,10 +28,15 @@
     "minor": {
         "minimumReleaseAge": "7 days"
     },
-    "ignoreDeps": [
-        "prettier"
-    ],
     "packageRules": [
+        {
+            "description": "Prettier and Biome config packages are deprecated",
+            "matchFileNames": [
+                "packages/prettier/**",
+                "packages/biome-config/**"
+            ],
+            "enabled": false
+        },
         {
             "description": "ESLint ecosystem",
             "groupName": "eslint ecosystem",
@@ -60,13 +65,6 @@
             "matchPackageNames": [
                 "oxlint",
                 "oxlint-tsgolint"
-            ]
-        },
-        {
-            "description": "Biome",
-            "groupName": "biome",
-            "matchPackageNames": [
-                "@biomejs/biome"
             ]
         },
         {
