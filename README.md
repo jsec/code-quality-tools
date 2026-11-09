@@ -1,20 +1,32 @@
 # jsec's Code Quality Tools
 
-This is a set of commonly used code quality enforcement tools used in TypeScript projects, with my personal preferences baked into configurations. The goal of this repo is so that I don't have to keep installing and configuring the same packages over and over and over again.
+Shared lint, format and TypeScript configurations for my TypeScript projects. Each package is published to npm under the `@jarsec` scope.
 
-## What's inside?
+## Packages
 
-This Turborepo includes the following packages:
+| Package | Configures | Status | README |
+|---|---|---|---|
+| `@jarsec/oxlint-config` | oxlint and oxfmt | Active | [packages/oxlint-config](packages/oxlint-config/README.md) |
+| `@jarsec/eslint-config` | ESLint | Active | [packages/eslint-config](packages/eslint-config/README.md) |
+| `@jarsec/tsconfig` | TypeScript | Active | [packages/tsconfig](packages/tsconfig/README.md) |
+| `@jarsec/prettier-config` | Prettier | Deprecated | [packages/prettier](packages/prettier/README.md) |
+| `@jarsec/biome-config` | Biome | Deprecated | [packages/biome-config](packages/biome-config/README.md) |
 
-#### TSConfig
+For a new project, install `@jarsec/oxlint-config` and `@jarsec/tsconfig`. The Prettier and Biome packages get no further updates; use `@jarsec/oxlint-config` instead.
 
-[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/tsconfig/README.md)
+## Development
 
-#### Prettier
-[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/prettier/README.md)
+The repo uses pnpm workspaces and Turborepo.
 
-#### ESLint
-[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/eslint-config/README.md)
+```sh
+pnpm install
+```
 
-#### Biome
-[README](https://github.com/jsec/code-quality-tools/blob/develop/packages/biome-config/README.md)
+| Command | What it does |
+|---|---|
+| `pnpm lint` | Runs oxlint on the repo, then each package's `lint` script |
+| `pnpm format` | Formats the repo with oxfmt |
+| `pnpm test` | Runs each package's tests |
+| `pnpm changeset` | Records a version bump and changelog entry for the packages you changed |
+
+Releases go through [Changesets](https://github.com/changesets/changesets): add a changeset with each change, and the release workflow versions and publishes the packages.

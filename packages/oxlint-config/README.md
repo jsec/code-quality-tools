@@ -1,6 +1,6 @@
 # @jarsec/oxlint-config
 
-This guide shows how to add the shared oxlint and oxfmt configurations to a project. It assumes you have a JavaScript or TypeScript project with a `package.json` file.
+Shared oxlint and oxfmt configurations for JavaScript and TypeScript projects, with presets for Node and React.
 
 ## Install the packages
 
