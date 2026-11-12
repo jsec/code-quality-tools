@@ -21,7 +21,7 @@
         "cz-conventional-changelog": "3.3.0",
         "oxfmt": "0.77.0",
         "oxlint": "1.92.0",
-        "oxlint-tsgolint": "7.0.2005",
+        "oxlint-tsgolint": "7.0.2007",
         "turbo": "latest"
     },
     "config": {
