@@ -25,12 +25,12 @@
         "test": "node --test test/*.test.js"
     },
     "devDependencies": {
-        "oxfmt": "0.77.0",
+        "oxfmt": "0.78.0",
         "oxlint": "1.92.0",
         "oxlint-tsgolint": "7.0.2005"
     },
     "peerDependencies": {
-        "oxfmt": "^0.77.0",
+        "oxfmt": "^0.78.0",
         "oxlint": "^1.92.0",
         "oxlint-tsgolint": "^7.0.2005"
     }
