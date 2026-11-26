@@ -14,7 +14,7 @@
     "provenance": true
   },
   "peerDependencies": {
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.0"
   },
   "exports": {
     "./bundler/node": "./node/bundler.json",
