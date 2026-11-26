@@ -1,5 +1,11 @@
 # @jarsec/oxlint-config
 
+## 2.1.1
+
+### Patch Changes
+
+- c5429f0: chore(deps): update dependency oxfmt to v0.78.0
+
 ## 2.1.0
 
 ### Minor Changes

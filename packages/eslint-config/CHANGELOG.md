@@ -1,5 +1,12 @@
 # @jarsec/eslint-config
 
+## 7.5.4
+
+### Patch Changes
+
+- f2a11e5: fix(deps): update dependency eslint-package-json to v3
+- 52e6f5d: Add @stylistic/max-len rule
+
 ## 7.5.3
 
 ### Patch Changes
