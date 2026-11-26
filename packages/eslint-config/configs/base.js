@@ -2,12 +2,13 @@
 
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
+import packageJson from 'eslint-package-json';
 import nodePlugin from 'eslint-plugin-n';
 import perfectionist from 'eslint-plugin-perfectionist';
-import packageJson from 'eslint-package-json';
 import unicorn from 'eslint-plugin-unicorn';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
+
 import { jsFileGlob, sourceFileGlob } from './globs.js';
 
 export default defineConfig([
@@ -34,10 +35,16 @@ export default defineConfig([
         ],
         files: sourceFileGlob,
         rules: {
-            '@typescript-eslint/consistent-type-definitions': [
+            '@stylistic/max-len': [
                 'error',
-                'type',
+                {
+                    code: 100,
+                    ignoreStrings: true,
+                    ignoreTemplateLiterals: true,
+                    ignoreUrls: true,
+                },
             ],
+            '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
             'accessor-pairs': 'error',
             'array-callback-return': 'error',
             'curly': ['error', 'multi-line'],
@@ -63,9 +70,7 @@ export default defineConfig([
         },
     },
     {
-        extends: [
-            tseslint.configs.disableTypeChecked,
-        ],
+        extends: [tseslint.configs.disableTypeChecked],
         files: jsFileGlob,
     },
     {
@@ -75,16 +80,12 @@ export default defineConfig([
             'package-json': packageJson,
         },
         rules: {
+            'package-json/dependency-version-range': 'off',
             'package-json/no-nested-exports': 'off',
         },
     },
     {
-        files: [
-            'eslint.config.js',
-            'drizzle.config.ts',
-            'tsdown.config.ts',
-            '**/*.test.ts',
-        ],
+        files: ['eslint.config.js', 'drizzle.config.ts', 'tsdown.config.ts', '**/*.test.ts'],
         rules: {
             'n/no-unpublished-import': 'off',
         },
