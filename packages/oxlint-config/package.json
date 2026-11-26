@@ -26,8 +26,8 @@
     },
     "devDependencies": {
         "oxfmt": "0.78.0",
-        "oxlint": "1.92.0",
-        "oxlint-tsgolint": "7.0.2005"
+        "oxlint": "1.94.0",
+        "oxlint-tsgolint": "7.0.2009"
     },
     "peerDependencies": {
         "oxfmt": "^0.78.0",
